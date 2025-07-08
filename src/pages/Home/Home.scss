@@ -1,0 +1,47 @@
+@use "../../styles/variables.scss" as *;
+
+.home {
+    background-color: $bluecolor;
+    color: $azurecolor;
+    font-family: $fontbody;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        position: relative;
+        text-align: center;
+
+        h1 {
+            font-family: $fonttitle;
+            font-size: 3rem;
+            color: $whitecolor;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: $azurecolor;
+        }
+
+        h3 {
+            font-size: 3rem;
+            color: $goldcolor;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $azurecolor;
+        }
+
+        .spiral {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            max-width: 800px;
+            z-index: -1;
+            opacity: 0.4;
+        }
+    }
+}
