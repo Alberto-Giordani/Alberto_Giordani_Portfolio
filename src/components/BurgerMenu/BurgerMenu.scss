@@ -1,0 +1,72 @@
+@use "../../styles/variables" as *;
+
+.burger {
+    &__overlay {
+        background: $azurecolor !important;
+        z-index: 999;
+    }
+
+    &__menu {
+        background: $whitecolor;
+        font-size: 10px;
+        z-index: 1000;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    &__item {
+        display: block;
+        margin: 5px 0;
+        color: $blackcolor !important;
+        text-decoration: none !important;
+        font-family: $fontbody !important;
+        font-weight: 500 !important;
+        font-size: 10px !important;
+        transition: text-decoration 0.3s ease;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &.active {
+            text-decoration: underline;
+        }
+    }
+
+    &__panel {
+        background-color: $whitecolor !important;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: $fontbody !important;
+    }
+
+    &__button {
+        position: fixed;
+        width: 30px;
+        height: 15px;
+        right: 6px;
+        top: 57px;
+    }
+
+    &__bar {
+        background-color: $whitecolor !important;
+    }
+
+    &__cross {
+        position: fixed;
+        right: 6px;
+        top: 57px;
+
+        &-button {
+            width: 22px;
+            height: 10px;
+        }
+    }
+}

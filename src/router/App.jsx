@@ -3,15 +3,15 @@ import Home from "../pages/Home";
 /* import APropos from "../pages/APropos";
 import Projets from "../pages/Projets";
 import CV from "../pages/CV";
-import Contact from "../pages/Contact";
-import Header from "../components/Header"; */
+import Contact from "../pages/Contact"; */
+import Header from "../components/Header";
 
 
 function App() {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/apropos" element={<APropos />} />

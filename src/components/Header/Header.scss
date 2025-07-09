@@ -1,0 +1,78 @@
+@use "../../styles/variables" as *;
+
+
+
+.header {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: $whitecolor;
+    max-width: 1440px;
+    height: 158px;
+
+    @media screen and (max-width: 1024px) {
+        padding: 0 35px;
+        height: 118.5px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 0 5px;
+        height: 125px;
+    }
+
+    &__logo {
+
+        &--image {
+            height: 158px;
+            width: auto;
+
+            @media screen and (max-width: 1024px) {
+                height: 118.5px;
+            }
+
+            @media screen and (max-width: 768px) {
+                height: 90px;
+            }
+        }
+
+    }
+
+    &__links {
+        display: flex;
+        width: 100%;
+        max-width: 321px;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 1024px) {
+            max-width: 363px;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        &--item {
+            color: $blackcolor;
+            text-decoration: none;
+            font-family: $fontbody;
+            font-weight: 500;
+            font-size: 16px;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 14px;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            &.active {
+                color: $bluecolor;
+                font-weight: 600;
+            }
+        }
+    }
+}
