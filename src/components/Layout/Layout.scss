@@ -1,0 +1,14 @@
+@use "../../styles/variables" as *;
+
+.background {
+
+    &__home {
+        background-color: $bluecolor;
+        min-width: 100%;
+    }
+
+    &__default {
+        background-color: $whitecolor;
+        min-width: 100%;
+    }
+}

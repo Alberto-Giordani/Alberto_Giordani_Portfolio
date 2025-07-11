@@ -1,86 +1,39 @@
-import { slide as Menu } from 'react-burger-menu';
+import { useState } from "react";
+import "./BurgerMenu.scss";
 import { NavLink } from "react-router-dom";
-import BurgerLogo from "../../assets/menu-icon.svg";
-import CloseLogo from "../../assets/close-icon.svg";
-import './BurgerMenu.scss';
+import menuIcon from "../../assets/icons/menu.svg";
+import closeIcon from "../../assets/icons/close.svg";
 
-function BurgerMenu({ isOpen, setIsOpen }) {
-    const handleLinkClick = () => {
-        setIsOpen(false);
-    }
+function BurgerMenu() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => setIsOpen(prev => !prev);
+    const closeMenu = () => setIsOpen(false);
 
     return (
-        <Menu
-            right
-            isOpen={isOpen}
-            onStateChange={({ isOpen }) => setIsOpen(isOpen)}
-            customBurgerIcon={<img src={BurgerLogo} alt="Menu" />}
-            customCrossIcon={<img src={CloseLogo} alt="Close" />}
-            overlayClassName="burger__overlay"
-            className="burger__menu"
-            burgerButtonClassName="burger__button"
-            crossButtonClassName="burger__cross-button"
-            itemListClassName="burger__items"
-            crossClassName="burger__cross"
-            menuClassName="burger__panel"
-        >
-            <NavLink
-                to="/"
-                onClick={handleLinkClick}
-                className={({ isActive }) =>
-                    isActive
-                        ? "burger__item active"
-                        : "burger__item"
-                }
-            >
-                Home
-            </NavLink>
-            <NavLink
-                to="/apropos"
-                onClick={handleLinkClick}
-                className={({ isActive }) =>
-                    isActive
-                        ? "burger__item active"
-                        : "burger__item"
-                }
-            >
-                À propos
-            </NavLink>
-            <NavLink
-                to="/projets"
-                onClick={handleLinkClick}
-                className={({ isActive }) =>
-                    isActive
-                        ? "burger__item active"
-                        : "burger__item"
-                }
-            >
-                Projets
-            </NavLink>
-            <NavLink
-                to="/cv"
-                onClick={handleLinkClick}
-                className={({ isActive }) =>
-                    isActive
-                        ? "burger__item active"
-                        : "burger__item"
-                }
-            >
-                CV
-            </NavLink>
-            <NavLink
-                to="/contact"
-                onClick={handleLinkClick}
-                className={({ isActive }) =>
-                    isActive
-                        ? "burger__item active"
-                        : "burger__item"
-                }
-            >
-                Contact
-            </NavLink>
+        <>
+            <button className="burger-button" onClick={toggleMenu} aria-label="Menu">
+                <img
+                    src={isOpen ? closeIcon : menuIcon}
+                    alt={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
+                    className={`burger-icon ${isOpen ? "open" : "closed"}`}
+                />
+            </button>
 
-        </Menu>
+            <nav className={`burger-panel ${isOpen ? "open" : ""}`} onClick={closeMenu}>
+                <ul className="burger-links">
+                    {["/", "/apropos", "/projets", "/cv", "/contact"].map((to, i) => (
+                        <li key={to}>
+                            <NavLink to={to} className={({ isActive }) =>
+                                `burger-link${isActive ? " active" : ""}`} onClick={closeMenu}
+                            >
+                                {["Accueil", "À propos", "Projets", "CV", "Contact"][i]}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+        </>
     );
 }
 

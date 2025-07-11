@@ -27,10 +27,7 @@ function Header() {
                 </NavLink>
 
                 {isMobile ? (
-                    <BurgerMenu
-                        isOpen={menuOpen}
-                        setIsOpen={setMenuOpen}
-                    />
+                    <BurgerMenu />
                 ) : (
                     <div className="header__links">
                         <NavLink

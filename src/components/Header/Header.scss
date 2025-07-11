@@ -7,29 +7,23 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
     background-color: $whitecolor;
     max-width: 1440px;
-    height: 158px;
-
-    @media screen and (max-width: 1024px) {
-        padding: 0 35px;
-        height: 118.5px;
-    }
+    height: 10vh;
 
     @media screen and (max-width: 768px) {
-        padding: 0 5px;
-        height: 125px;
+        height: 15vh;
     }
 
     &__logo {
 
         &--image {
-            height: 158px;
+            height: 91px;
             width: auto;
+            padding-left: 100px;
 
-            @media screen and (max-width: 1024px) {
-                height: 118.5px;
+            @media screen and (max-width: 1224px) {
+                height: 96px;
             }
 
             @media screen and (max-width: 768px) {
@@ -42,12 +36,13 @@
     &__links {
         display: flex;
         width: 100%;
-        max-width: 321px;
+        max-width: 475px;
         justify-content: space-between;
         align-items: center;
+        padding-right: 100px;
 
-        @media screen and (max-width: 1024px) {
-            max-width: 363px;
+        @media screen and (max-width: 1224px) {
+            max-width: 377px;
         }
 
         @media screen and (max-width: 768px) {
@@ -60,8 +55,9 @@
             font-family: $fontbody;
             font-weight: 500;
             font-size: 16px;
+            transition: color 0.3s;
 
-            @media screen and (max-width: 1024px) {
+            @media screen and (max-width: 1224px) {
                 font-size: 14px;
             }
 

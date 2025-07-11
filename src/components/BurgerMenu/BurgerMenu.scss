@@ -1,72 +1,79 @@
-@use "../../styles/variables" as *;
+@import "../../styles/variables"; // palette + fonts
 
 .burger {
-    &__overlay {
-        background: $azurecolor !important;
-        z-index: 999;
-    }
 
-    &__menu {
-        background: $whitecolor;
-        font-size: 10px;
-        z-index: 1000;
-    }
-
-    &__items {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    &-button {
+        background: none;
+        border: none;
+        cursor: pointer;
         padding: 0;
-    }
+        position: absolute;
+        top: 58px;
+        right: 25px;
+        z-index: 2000;
+        display: none;
 
-    &__item {
-        display: block;
-        margin: 5px 0;
-        color: $blackcolor !important;
-        text-decoration: none !important;
-        font-family: $fontbody !important;
-        font-weight: 500 !important;
-        font-size: 10px !important;
-        transition: text-decoration 0.3s ease;
-
-        &:hover {
-            text-decoration: underline;
-        }
-
-        &.active {
-            text-decoration: underline;
+        @media screen and (max-width: 768px) {
+            display: block;
         }
     }
 
-    &__panel {
-        background-color: $whitecolor !important;
-        padding: 20px 0;
+    &-icon {
+        width: 22px;
+        transition: transform 0.3s ease;
+
+        &.open {
+            transform: rotate(90deg);
+        }
+    }
+
+    &-links {
+        list-style: none;
+        padding: 4rem 0 0;
+        margin: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        font-family: $fontbody !important;
+        align-items: center;
+
+        li {
+            margin: 1rem 0;
+
+            .burger-link {
+                font-family: $fontbody;
+                font-size: 14px;
+                font-weight: 500;
+                color: $blackcolor;
+                text-decoration: none;
+                transition: color 0.3s;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                &.active {
+                    color: $bluecolor;
+                    font-weight: 600;
+                }
+            }
+        }
     }
 
-    &__button {
+    &-panel {
         position: fixed;
-        width: 30px;
-        height: 15px;
-        right: 6px;
-        top: 57px;
-    }
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(10px);
+        background: rgba(244, 247, 245, 0.7);
+        z-index: 1500;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease;
 
-    &__bar {
-        background-color: $whitecolor !important;
-    }
-
-    &__cross {
-        position: fixed;
-        right: 6px;
-        top: 57px;
-
-        &-button {
-            width: 22px;
-            height: 10px;
+        &.open {
+            opacity: 1;
+            visibility: visible;
         }
     }
 }
