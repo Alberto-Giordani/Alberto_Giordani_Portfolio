@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 912px) {
         height: 15vh;
     }
 
@@ -21,18 +21,32 @@
     &__logo {
         &--image {
             height: 10vh;
-            padding-left: 60px;
+            padding-left: $main-margin;
+
+            @media screen and (max-width: 1024px) {
+                padding-left: 4.5vw;
+            }
+
+            @media screen and (max-width: 912px) {
+                height: 15vh;
+                padding-left: $main-margin;
+            }
         }
     }
 
     &__links {
         display: flex;
         justify-content: flex-start;
-        gap: 60px;
+        gap: $main-margin;
         align-items: center;
-        padding-right: 60px;
+        padding-right: $main-margin;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
+            padding-right: 4.5vw;
+            gap: 2.4vw;
+        }
+
+        @media screen and (max-width: 912px) {
             display: none;
         }
 

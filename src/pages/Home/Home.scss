@@ -38,6 +38,11 @@
         &--image {
             width: auto;
             height: 100%;
+
+            @media screen and (max-width: 912px) {
+                transform: rotate(-90deg) scaleX(-1);
+                transform-origin: center;
+            }
         }
     }
 
