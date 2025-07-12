@@ -6,3 +6,12 @@ $blackcolor: #0f1108;
 
 $fonttitle: "Libre Baskerville", serif;
 $fontbody: "Montserrat", sans-serif;
+
+$main-margin: 100px;
+
+@mixin container {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: $main-margin;
+}

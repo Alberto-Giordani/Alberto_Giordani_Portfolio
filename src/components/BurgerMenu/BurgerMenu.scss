@@ -7,9 +7,8 @@
         border: none;
         cursor: pointer;
         padding: 0;
-        position: absolute;
-        top: 58px;
-        right: 25px;
+        position: relative;
+        padding-right: $main-margin;
         z-index: 2000;
         display: none;
 

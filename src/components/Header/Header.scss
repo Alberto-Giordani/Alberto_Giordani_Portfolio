@@ -1,49 +1,36 @@
 @use "../../styles/variables" as *;
 
-
-
 .header {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
     background-color: $whitecolor;
-    max-width: 1440px;
     height: 10vh;
+    display: flex;
+    align-items: center;
 
     @media screen and (max-width: 768px) {
         height: 15vh;
     }
 
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
     &__logo {
-
         &--image {
-            height: 91px;
-            width: auto;
-            padding-left: 100px;
-
-            @media screen and (max-width: 1224px) {
-                height: 96px;
-            }
-
-            @media screen and (max-width: 768px) {
-                height: 90px;
-            }
+            height: 10vh;
+            padding-left: 60px;
         }
-
     }
 
     &__links {
         display: flex;
-        width: 100%;
-        max-width: 475px;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 60px;
         align-items: center;
-        padding-right: 100px;
-
-        @media screen and (max-width: 1224px) {
-            max-width: 377px;
-        }
+        padding-right: 60px;
 
         @media screen and (max-width: 768px) {
             display: none;
@@ -55,19 +42,23 @@
             font-family: $fontbody;
             font-weight: 500;
             font-size: 16px;
-            transition: color 0.3s;
+            transition: all 0.3s ease-out;
+            text-wrap: nowrap;
 
             @media screen and (max-width: 1224px) {
                 font-size: 14px;
             }
 
             &:hover {
-                text-decoration: underline;
+                color: $bluecolor;
+                transform: scale(1.1);
+                font-weight: 600;
             }
 
             &.active {
                 color: $bluecolor;
                 font-weight: 600;
+                text-decoration: underline;
             }
         }
     }

@@ -1,68 +1,88 @@
-@use "../../styles/variables.scss" as *;
+@use "../../styles/variables" as *;
 
 .home {
     background-color: $bluecolor;
     font-family: $fontbody;
     height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     @media screen and (max-width: 768px) {
         height: 85vh;
     }
 
     &__content {
-        position: relative;
         width: 100%;
-        max-width: 1440px;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+    &__container {
+        @include container;
+        position: relative;
+        aspect-ratio: 1.618 / 1;
+        width: auto;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__spiral {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        &--image {
+            width: auto;
+            height: 100%;
+        }
+    }
+
     &__text {
         position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         text-align: left;
+        z-index: 3;
 
         h1 {
             position: absolute;
-            top: 111px;
-            left: 167px;
+            top: 11.74%;
+            left: 9.05%;
             font-family: $fonttitle;
             font-style: italic;
-            font-size: 72px;
+            font-size: 3.55vw;
             color: $whitecolor;
+            transition: all 0.3s ease-out;
+            cursor: default;
+
+            &:hover {
+                color: $goldcolor;
+                transform: scale(1.1);
+            }
         }
 
         h2 {
             position: absolute;
-            top: 423px;
-            left: 279px;
-            font-size: 48px;
+            top: 51.98%;
+            left: 18.06%;
+            font-size: 2.37vw;
             font-weight: 600;
             color: $azurecolor;
         }
 
         p {
             position: absolute;
-            top: 535px;
-            left: 391px;
-            font-size: 28px;
+            top: 66.5%;
+            left: 27.07%;
+            font-size: 1.38vw;
             font-weight: 500;
             color: $azurecolor;
         }
-    }
-
-    &__spiral {
-        width: 100%;
-        height: auto;
-        padding: 0 50px;
-        max-width: 1286px;
-        object-fit: cover;
-        z-index: 2;
     }
 }
