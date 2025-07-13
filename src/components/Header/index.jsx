@@ -5,11 +5,11 @@ import { useState, useEffect } from "react";
 import BurgerMenu from "../BurgerMenu";
 
 function Header() {
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 960);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 912);
+            setIsMobile(window.innerWidth < 960);
         };
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);

@@ -5,8 +5,8 @@
     font-family: $fontbody;
     height: 90vh;
 
-    @media screen and (max-width: 768px) {
-        height: 85vh;
+    @media screen and (max-width: 960px) {
+        height: 100vh;
     }
 
     &__content {
@@ -15,6 +15,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
 
     &__container {
@@ -26,6 +27,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 960px) {
+            aspect-ratio: 1 / 1.618;
+            height: 85vh;
+            width: 100%;
+        }
     }
 
     &__spiral {
@@ -35,13 +42,22 @@
         align-items: center;
         height: 100%;
 
+        @media screen and (max-width: 960px) {
+            height: auto;
+            width: 100%;
+            aspect-ratio: 1 / 1.618;
+            margin: 0 $main-margin;
+        }
+
         &--image {
             width: auto;
             height: 100%;
 
-            @media screen and (max-width: 912px) {
+            @media screen and (max-width: 960px) {
                 transform: rotate(-90deg) scaleX(-1);
                 transform-origin: center;
+                width: 161%;
+                height: auto;
             }
         }
     }
@@ -70,6 +86,12 @@
                 color: $goldcolor;
                 transform: scale(1.1);
             }
+
+            @media screen and (max-width: 960px) {
+                font-size: 13vw;
+                top: 13.14%;
+                left: 8%;
+            }
         }
 
         h2 {
@@ -79,6 +101,12 @@
             font-size: 2.37vw;
             font-weight: 600;
             color: $azurecolor;
+
+            @media screen and (max-width: 960px) {
+                font-size: 8vw;
+                top: 46.70%;
+                left: 30.76%;
+            }
         }
 
         p {
@@ -88,6 +116,15 @@
             font-size: 1.38vw;
             font-weight: 500;
             color: $azurecolor;
+
+            @media screen and (max-width: 960px) {
+                font-size: 5vw;
+                top: 71%;
+                left: 47.45%;
+                max-width: 43.2%;
+                text-align: center;
+                text-wrap: wrap;
+            }
         }
     }
 }
