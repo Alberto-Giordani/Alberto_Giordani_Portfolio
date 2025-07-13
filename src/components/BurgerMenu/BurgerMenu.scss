@@ -18,7 +18,7 @@
     }
 
     &-icon {
-        width: 22px;
+        height: 2vh;
         transition: transform 0.3s ease;
 
         &.open {
@@ -39,7 +39,7 @@
 
             .burger-link {
                 font-family: $fontbody;
-                font-size: 14px;
+                font-size: 3vw;
                 font-weight: 500;
                 color: $blackcolor;
                 text-decoration: none;

@@ -9,9 +9,26 @@ $fontbody: "Montserrat", sans-serif;
 
 $main-margin: 3.125vw;
 
+$golden-ratio: 1.618 / 1;
+$golden-inverse: 1 / 1.618;
+
 @mixin container {
     width: 100%;
     max-width: 1440px;
     margin-inline: auto;
     padding-inline: $main-margin;
+}
+
+@mixin spiral__transformation--home {
+    transform: rotate(-90deg) scaleX(-1);
+    transform-origin: center;
+    width: 161%;
+    height: auto;
+}
+
+@mixin spiral__transformation {
+    transform: rotate(90deg) scaleX(-1);
+    transform-origin: center;
+    width: 161%;
+    height: auto;
 }

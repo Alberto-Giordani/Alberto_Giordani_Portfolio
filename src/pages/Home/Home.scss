@@ -21,7 +21,7 @@
     &__container {
         @include container;
         position: relative;
-        aspect-ratio: 1.618 / 1;
+        aspect-ratio: $golden-ratio;
         width: auto;
         height: 90vh;
         display: flex;
@@ -29,7 +29,7 @@
         align-items: center;
 
         @media screen and (max-width: 960px) {
-            aspect-ratio: 1 / 1.618;
+            aspect-ratio: $golden-inverse;
             height: 85vh;
             width: 100%;
         }
@@ -45,7 +45,7 @@
         @media screen and (max-width: 960px) {
             height: auto;
             width: 100%;
-            aspect-ratio: 1 / 1.618;
+            aspect-ratio: $golden-inverse;
             margin: 0 $main-margin;
         }
 
@@ -54,10 +54,7 @@
             height: 100%;
 
             @media screen and (max-width: 960px) {
-                transform: rotate(-90deg) scaleX(-1);
-                transform-origin: center;
-                width: 161%;
-                height: auto;
+                @include spiral__transformation--home;
             }
         }
     }
