@@ -1,0 +1,153 @@
+@use "../../styles/variables" as *;
+
+.slide {
+
+
+    &__left {
+
+        h1 {
+            position: absolute;
+            top: 11.74%;
+            left: 9.05%;
+            font-family: $fonttitle;
+            font-size: 3.55vw;
+            font-style: italic;
+            color: $bluecolor;
+
+            @media screen and (max-width: 960px) {
+                font-size: 8vw;
+                top: 18%;
+                left: 18%;
+                transform: translate(-18%, -18%)
+            }
+        }
+
+        &--images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+
+            @media screen and (max-width: 960px) {
+                display: none;
+            }
+
+            img {
+                position: absolute;
+                border-radius: 10px;
+                border: 1px solid $goldcolor;
+
+                &:nth-child(1) {
+                    top: 38%;
+                    left: 3.32%;
+                    width: 26%;
+                    transition: $transition;
+
+                    &:hover {
+                        transform: rotate(-5deg) translateX(10%);
+                        @include screenshots;
+
+
+                        @media screen and (max-width: 1024px) {
+                            transform: rotate(-5deg) translateX(30%);
+                        }
+                    }
+
+                }
+
+                &:nth-child(2) {
+                    top: 38%;
+                    left: 32.64%;
+                    width: 26%;
+                    transition: $transition;
+
+                    &:hover {
+                        transform: rotate(3deg);
+                        @include screenshots;
+                    }
+                }
+
+                &:nth-child(3) {
+                    bottom: 6.95%;
+                    left: 18%;
+                    width: 26%;
+                    transition: $transition;
+
+                    &:hover {
+                        transform: rotate(-2deg) translateY(-40%);
+                        @include screenshots;
+
+                        @media screen and (max-width: 1024px) {
+                            transform: rotate(-2deg) translate(13%, -40%);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    &__right {
+
+        &--logo {
+            position: absolute;
+            top: 0.25%;
+            right: 0.25%;
+            width: 23.4%;
+            height: auto;
+
+            @media screen and (max-width: 960px) {
+                width: 38%;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                box-shadow: $blackcolor 0px 0px 10px;
+                border-radius: 1%;
+            }
+        }
+
+        &--description {
+            position: absolute;
+            top: 47%;
+            right: 2.5%;
+            font-family: $fontbody;
+            color: $blackcolor;
+            text-align: justify;
+            font-size: 1.38vw;
+            width: 33%;
+
+            @media screen and (max-width: 960px) {
+                font-size: 5vw;
+                top: 42%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 77%;
+            }
+        }
+
+        &--links {
+            position: absolute;
+            top: 85%;
+            right: 2.5%;
+            font-family: $fontbody;
+            font-size: 1.38vw;
+            width: 33%;
+
+            @media screen and (max-width: 960px) {
+                font-size: 5vw;
+                top: 87%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 77%;
+            }
+
+            a {
+                text-decoration: none;
+                color: $bluecolor;
+            }
+        }
+    }
+}

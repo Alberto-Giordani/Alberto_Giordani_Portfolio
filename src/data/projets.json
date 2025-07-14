@@ -1,0 +1,56 @@
+[
+    {
+        "id": "argentbank",
+        "title": "ArgentBank",
+        "description": [
+            "Application bancaire avec React & Redux",
+            "Formulaires, authentification, requêtes API",
+            "Mock API créé pour rendre le site visible",
+            "Utilisez l'username tony@iron.com et le mot de passe iron123 pour accéder"
+        ],
+        "logo": "/assets/logos/logoArgentBank.webp",
+        "images": [
+            "/assets/screen/ArgentBank_1.webp",
+            "/assets/screen/ArgentBank_2.webp",
+            "/assets/screen/ArgentBank_3.webp"
+        ],
+        "github": "https://github.com/Alberto-Giordani/ArgentBank-Frontend",
+        "site": "https://alberto-giordani.github.io/ArgentBank-Frontend/"
+    },
+    {
+        "id": "kasa",
+        "title": "Kasa",
+        "description": [
+            "Site d’annonces immobilières style Airbnb",
+            "Routing dynamique avec React Router",
+            "Composants interactifs",
+            "Projet organisé de manière modulaire"
+        ],
+        "logo": "/assets/logos/logoKasa.webp",
+        "images": [
+            "/assets/screen/Kasa_1.webp",
+            "/assets/screen/Kasa_2.webp",
+            "/assets/screen/Kasa_3.webp"
+        ],
+        "github": "https://github.com/Alberto-Giordani/Kasa",
+        "site": "https://alberto-giordani.github.io/Kasa/"
+    },
+    {
+        "id": "ohmyfood",
+        "title": "Ohmyfood",
+        "description": [
+            "Site de réservation dans des restaurants",
+            "Interface moderne et responsive",
+            "Animations et transitions CSS",
+            "Design mobile-first"
+        ],
+        "logo": "/assets/logos/logoOhmyfood.webp",
+        "images": [
+            "/assets/screen/Ohmyfood_1.webp",
+            "/assets/screen/Ohmyfood_2.webp",
+            "/assets/screen/Ohmyfood_3.webp"
+        ],
+        "github": "https://github.com/Alberto-Giordani/Ohmyfood",
+        "site": "https://alberto-giordani.github.io/Ohmyfood/"
+    }
+]

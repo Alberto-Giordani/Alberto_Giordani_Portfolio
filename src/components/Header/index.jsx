@@ -1,5 +1,5 @@
 import "./Header.scss";
-import logo from "../../assets/logo_with_brackets_color_002FA7.svg";
+import logo from "../../assets/logos/logoAG.svg";
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import BurgerMenu from "../BurgerMenu";

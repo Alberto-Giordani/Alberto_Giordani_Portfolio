@@ -12,11 +12,21 @@ $main-margin: 3.125vw;
 $golden-ratio: 1.618 / 1;
 $golden-inverse: 1 / 1.618;
 
+$transition: all 0.3s ease-out;
+
 @mixin container {
     width: 100%;
     max-width: 1440px;
     margin-inline: auto;
     padding-inline: $main-margin;
+}
+
+@mixin screenshots {
+    filter: drop-shadow(5px 5px 5px $goldcolor);
+    scale: 3.5;
+    z-index: 6;
+    border-radius: 0;
+    border: none;
 }
 
 @mixin spiral__transformation--home {
@@ -29,6 +39,6 @@ $golden-inverse: 1 / 1.618;
 @mixin spiral__transformation {
     transform: rotate(90deg) scaleX(-1);
     transform-origin: center;
-    width: 161%;
     height: auto;
+    width: 161%;
 }

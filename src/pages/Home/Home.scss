@@ -76,7 +76,7 @@
             font-style: italic;
             font-size: 3.55vw;
             color: $whitecolor;
-            transition: all 0.3s ease-out;
+            transition: $transition;
             cursor: default;
 
             &:hover {

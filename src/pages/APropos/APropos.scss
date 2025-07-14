@@ -111,7 +111,7 @@
             font-size: 2.37vw;
             font-style: italic;
             text-align: left;
-            transition: all 0.3s ease-out;
+            transition: $transition;
             cursor: default;
 
             @media screen and (max-width: 960px) {
@@ -138,7 +138,8 @@
             @media screen and (max-width: 960px) {
                 font-size: 5vw;
                 top: 42%;
-                left: 12%;
+                left: 50%;
+                transform: translateX(-50%);
                 width: 77%;
             }
 
