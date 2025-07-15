@@ -28,6 +28,7 @@ function CV() {
                             </a>
                         </div>
                         <section className="cv__text">
+                            <h1>Mon CV</h1>
 
                             <h2>Formation</h2>
                             <ul>
