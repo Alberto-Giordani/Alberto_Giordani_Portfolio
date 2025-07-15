@@ -58,17 +58,19 @@
             font-family: $fontbody;
             font-size: 1.38vw;
             width: 33%;
+            text-decoration: none;
+            color: $bluecolor;
+            transition: $transition;
+
+            &:hover {
+                color: $goldcolor;
+            }
 
             @media screen and (max-width: 960px) {
                 top: 32%;
                 left: 5%;
                 width: 50%;
                 font-size: 3vw;
-            }
-
-            a {
-                text-decoration: none;
-                color: $bluecolor;
             }
         }
     }
