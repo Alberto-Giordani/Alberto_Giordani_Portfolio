@@ -18,7 +18,7 @@ function Home() {
                                 <span>Giordani</span>
                             </h1>
                             <h2>Portfolio</h2>
-                            <p>Développeur Front-End</p>
+                            <h3>Développeur Front-End</h3>
                         </div>
                     </div>
                 </div>

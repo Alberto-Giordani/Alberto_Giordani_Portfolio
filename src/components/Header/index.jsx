@@ -19,7 +19,7 @@ function Header() {
         <header className="header">
             <div className="header__container">
                 <NavLink className="header__logo" to="/">
-                    <img src={logo} alt="Logo" className="header__logo--image" />
+                    <img src={logo} alt="Logo Alberto Giordani" className="header__logo--image" />
                 </NavLink>
 
                 {isMobile ? (

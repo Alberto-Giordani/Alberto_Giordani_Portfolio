@@ -50,6 +50,36 @@
                 font-size: 8vw;
                 top: 17%;
                 left: 12%;
+
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        button {
+            font-family: $fontbody;
+            font-size: 0.85vw;
+            color: $whitecolor;
+            padding: 0.34vw 0.69vw;
+            border: none;
+            border-radius: 10px;
+            width: 20%;
+            background-color: $bluecolor;
+            align-self: center;
+            filter: drop-shadow(2px 2px 2px $goldcolor);
+            transition: $transition;
+
+            &:hover {
+                filter: drop-shadow(5px 5px 5px $goldcolor);
+            }
+
+
+
+            @media screen and (max-width:960px) {
+                padding: 1vw;
+                font-size: 3vw;
+                width: 38.5vw;
             }
         }
 
@@ -62,9 +92,17 @@
             gap: 1.38vw;
             width: 40%;
             margin: 0 auto;
-            font-size: 1.38vw;
+            font-size: 0.85vw;
             font-family: $fontbody;
             color: $blackcolor;
+
+            @media screen and (max-width: 960px) {
+                font-size: 3vw;
+                top: 42%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 77%;
+            }
         }
 
         &--group {
@@ -79,17 +117,28 @@
 
             input,
             textarea {
-                padding: 0.34vw;
-                border: 1px solid $bluecolor;
+                padding: 0.34vw 0.69vw;
+                outline: none;
+                border: 2px solid $bluecolor;
                 border-radius: 10px;
-                font-size: 0.69vw;
-                transition: $transition;
+                font-size: 1.38vw;
                 color: $blackcolor;
                 font-family: $fontbody;
+                font-style: italic;
+                font-weight: 500;
+                transition: $transition;
 
                 &:focus {
-                    border: 1px solid $goldcolor;
-                    background: $azurecolor;
+                    border-color: $goldcolor;
+                }
+
+                &:not(:placeholder-shown) {
+                    background-color: $azurecolor;
+                }
+
+                @media screen and (max-width:960px) {
+                    padding: 1vw;
+                    font-size: 3vw;
                 }
             }
 

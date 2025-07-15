@@ -14,7 +14,7 @@ function Contact() {
                         />
 
                         <section className="contact__text">
-                            <h1>Ècrivez-moi !</h1>
+                            <h1>Idées, <span>questions ?</span></h1>
 
                             <form
                                 className="contact__text--form"
@@ -49,7 +49,7 @@ function Contact() {
                                         id="message"
                                         name="message"
                                         placeholder="Votre message"
-                                        rows="10"
+                                        rows="3"
                                         required
                                     />
                                 </div>
