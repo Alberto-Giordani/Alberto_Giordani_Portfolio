@@ -36,7 +36,7 @@
             img {
                 position: absolute;
                 border-radius: 10px;
-                border: 1px solid $goldcolor;
+                filter: drop-shadow(2px 2px 2px $goldcolor);
 
                 &:nth-child(1) {
                     top: 38%;
@@ -45,7 +45,7 @@
                     transition: $transition;
 
                     &:hover {
-                        transform: rotate(-5deg) translateX(10%);
+                        transform: rotate(-5deg) translateX(20%);
                         @include screenshots;
 
 

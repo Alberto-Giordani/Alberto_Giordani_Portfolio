@@ -22,9 +22,9 @@
         "title": "Kasa",
         "description": [
             "Site d’annonces immobilières style Airbnb",
+            "Projet organisé de manière modulaire avec React",
             "Routing dynamique avec React Router",
-            "Composants interactifs",
-            "Projet organisé de manière modulaire"
+            "Composants interactifs"
         ],
         "logo": "/assets/logos/logoKasa.webp",
         "images": [
@@ -41,7 +41,7 @@
         "description": [
             "Site de réservation dans des restaurants",
             "Interface moderne et responsive",
-            "Animations et transitions CSS",
+            "Animations et transitions réalisées avec Sass",
             "Design mobile-first"
         ],
         "logo": "/assets/logos/logoOhmyfood.webp",
