@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import "./Contact.scss";
 import spiralContact from "../../assets/spirals/spiralContact.svg";
+import closeIcon from "../../assets/icons/close.svg";
 
 function Contact() {
     const formRef = useRef();
@@ -39,9 +40,16 @@ function Contact() {
                             <h1>Idées, <span>questions ?</span></h1>
 
                             {submitted ? (
-                                <h2 className="contact__text--thanks">
-                                    Merci pour votre message !
-                                </h2>
+                                <div className="contact__text--thanks">
+                                    <h2>
+                                        Merci pour votre message !
+                                    </h2>
+                                    <img
+                                        src={closeIcon}
+                                        alt="Fermeture du message"
+                                        onClick={() => setSubmitted(false)}
+                                    />
+                                </div>
                             ) : (
 
                                 < form

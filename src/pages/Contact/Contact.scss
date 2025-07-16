@@ -154,24 +154,53 @@
         }
 
         &--thanks {
+
             position: absolute;
-            left: 9.05%;
             top: 38%;
-            font-family: $fonttitle;
-            color: $bluecolor;
-            font-size: 2.37vw;
-            font-style: italic;
-            text-align: left;
-            text-shadow: 2px 2px 2px $goldcolor;
+            left: 9.05%;
+            width: 50%;
+            background-color: $azurecolor;
+            height: 10vh;
+            box-shadow: 2px 2px 2px $goldcolor;
 
             @media screen and (max-width: 960px) {
-                font-size: 5vw;
                 top: 42%;
                 left: 50%;
                 transform: translateX(-50%);
-                width: 77%;
-                text-shadow: none;
-                text-align: center;
+                width: 90%;
+            }
+
+            h2 {
+                position: absolute;
+                left: 2%;
+                top: 5%;
+                font-family: $fonttitle;
+                color: $bluecolor;
+                font-size: 2.37vw;
+                font-style: italic;
+                text-align: left;
+
+                @media screen and (max-width: 960px) {
+                    font-size: 5vw;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            img {
+                height: 1.7vw;
+                position: absolute;
+                top: 5%;
+                right: 2%;
+                cursor: pointer;
+
+                @media screen and (max-width: 960px) {
+                    height: 2.5vw;
+                }
+
             }
         }
     }
