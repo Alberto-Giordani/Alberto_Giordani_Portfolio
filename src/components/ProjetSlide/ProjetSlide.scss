@@ -13,6 +13,7 @@
             font-size: 3.55vw;
             font-style: italic;
             color: $bluecolor;
+            text-shadow: 2px 2px 2px $goldcolor;
 
             @media screen and (max-width: 960px) {
                 font-size: 8vw;
@@ -115,7 +116,7 @@
             right: 2.5%;
             font-family: $fontbody;
             color: $blackcolor;
-            text-align: justify;
+            text-align: left;
             font-size: 1.38vw;
             width: 33%;
 

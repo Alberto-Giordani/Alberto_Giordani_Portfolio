@@ -76,12 +76,14 @@
             font-style: italic;
             font-size: 3.55vw;
             color: $whitecolor;
+            text-shadow: 2px 2px 2px $goldcolor;
             transition: $transition;
             cursor: default;
 
             &:hover {
                 color: $goldcolor;
                 transform: scale(1.1);
+                text-shadow: none;
             }
 
             @media screen and (max-width: 960px) {

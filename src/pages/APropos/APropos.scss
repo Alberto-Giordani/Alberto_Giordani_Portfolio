@@ -94,6 +94,7 @@
             font-size: 3.55vw;
             font-style: italic;
             color: $bluecolor;
+            text-shadow: 2px 2px 2px $goldcolor;
 
             @media screen and (max-width: 960px) {
                 font-size: 8vw;
@@ -111,6 +112,7 @@
             font-size: 2.37vw;
             font-style: italic;
             text-align: left;
+            text-shadow: 2px 2px 2px $goldcolor;
             transition: $transition;
             cursor: default;
 
@@ -121,6 +123,7 @@
             &:hover {
                 color: $goldcolor;
                 transform: scale(1.1);
+                text-shadow: none;
             }
         }
 
@@ -130,7 +133,7 @@
             left: 9.05%;
             font-size: 1.38vw;
             color: $blackcolor;
-            text-align: justify;
+            text-align: left;
             width: 43.73%;
             max-height: 52.35%;
             overflow: auto;
