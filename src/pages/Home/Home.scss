@@ -10,44 +10,15 @@
     }
 
     &__content {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
+        @include content;
     }
 
     &__container {
         @include container;
-        position: relative;
-        aspect-ratio: $golden-ratio;
-        width: auto;
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @media screen and (max-width: 960px) {
-            aspect-ratio: $golden-inverse;
-            height: 85vh;
-            width: 100%;
-        }
     }
 
     &__spiral {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
-        @media screen and (max-width: 960px) {
-            height: auto;
-            width: 100%;
-            aspect-ratio: $golden-inverse;
-            margin: 0 $main-margin;
-        }
+        @include spiral_shape;
 
         &--image {
             width: auto;
@@ -74,9 +45,9 @@
             left: 9.05%;
             font-family: $fonttitle;
             font-style: italic;
-            font-size: 3.55vw;
+            font-size: $sizeh1;
             color: $whitecolor;
-            text-shadow: 2px 2px 2px $goldcolor;
+            text-shadow: $shadow2px;
             transition: $transition;
             cursor: default;
 
@@ -98,7 +69,7 @@
             position: absolute;
             top: 51.98%;
             left: 18.06%;
-            font-size: 2.37vw;
+            font-size: $sizeh2;
             font-weight: 600;
             color: $azurecolor;
 
@@ -113,7 +84,7 @@
             position: absolute;
             top: 66.5%;
             left: 27.07%;
-            font-size: 1.38vw;
+            font-size: $sizebody;
             font-weight: 500;
             color: $azurecolor;
 

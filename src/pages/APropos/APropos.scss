@@ -10,44 +10,15 @@
     }
 
     &__content {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
+        @include content;
     }
 
     &__container {
         @include container;
-        position: relative;
-        aspect-ratio: $golden-ratio;
-        width: auto;
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @media screen and (max-width: 960px) {
-            aspect-ratio: $golden-inverse;
-            height: 85vh;
-            width: 100%;
-        }
     }
 
     &__spiral {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
-        @media screen and (max-width: 960px) {
-            height: auto;
-            width: 100%;
-            aspect-ratio: $golden-inverse;
-            margin: 0 $main-margin;
-        }
+        @include spiral_shape;
 
         &--image {
             width: auto;
@@ -61,8 +32,8 @@
 
     &__photo {
         position: absolute;
-        top: 0.25%;
-        right: 0.25%;
+        top: 0.15%;
+        right: 0.15%;
         width: 23.6%;
         height: auto;
 
@@ -73,8 +44,8 @@
         &--image {
             width: 100%;
             height: auto;
-            box-shadow: $goldcolor 2px 2px 10px;
-            border-radius: 1%;
+            box-shadow: $shadow5px;
+            border-radius: 2%;
         }
     }
 
@@ -91,10 +62,10 @@
             top: 11.74%;
             left: 9.05%;
             font-family: $fonttitle;
-            font-size: 3.55vw;
+            font-size: $sizeh1;
             font-style: italic;
             color: $bluecolor;
-            text-shadow: 2px 2px 2px $goldcolor;
+            text-shadow: $shadow2px;
 
             @media screen and (max-width: 960px) {
                 font-size: 8vw;
@@ -110,10 +81,10 @@
             left: 65.9%;
             font-family: $fonttitle;
             color: $bluecolor;
-            font-size: 2.37vw;
+            font-size: $sizeh2;
             font-style: italic;
             text-align: left;
-            text-shadow: 2px 2px 2px $goldcolor;
+            text-shadow: $shadow2px;
             transition: $transition;
             cursor: default;
 
@@ -132,7 +103,7 @@
             position: absolute;
             top: 31%;
             left: 9.05%;
-            font-size: 1.38vw;
+            font-size: $sizebody;
             color: $blackcolor;
             text-align: left;
             width: 43.73%;

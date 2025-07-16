@@ -10,10 +10,10 @@
             top: 11.74%;
             left: 9.05%;
             font-family: $fonttitle;
-            font-size: 3.55vw;
+            font-size: $sizeh1;
             font-style: italic;
             color: $bluecolor;
-            text-shadow: 2px 2px 2px $goldcolor;
+            text-shadow: $shadow2px;
 
             @media screen and (max-width: 960px) {
                 font-size: 8vw;
@@ -38,7 +38,7 @@
             img {
                 position: absolute;
                 border-radius: 10px;
-                filter: drop-shadow(2px 2px 2px $goldcolor);
+                filter: drop-shadow($shadow2px);
 
                 &:nth-child(1) {
                     top: 38%;
@@ -118,7 +118,7 @@
             font-family: $fontbody;
             color: $blackcolor;
             text-align: left;
-            font-size: 1.38vw;
+            font-size: $sizebody;
             width: 33%;
 
             @media screen and (max-width: 960px) {
@@ -135,7 +135,7 @@
             top: 85%;
             right: 2.5%;
             font-family: $fontbody;
-            font-size: 1.38vw;
+            font-size: $sizebody;
             width: 33%;
 
 

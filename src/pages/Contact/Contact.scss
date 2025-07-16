@@ -10,29 +10,11 @@
     }
 
     &__content {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
+        @include content;
     }
 
     &__container {
         @include container;
-        position: relative;
-        aspect-ratio: $golden-ratio;
-        width: auto;
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        @media screen and (max-width: 960px) {
-            aspect-ratio: $golden-inverse;
-            height: 85vh;
-            width: 100%;
-        }
     }
 
     &__text {
@@ -42,10 +24,10 @@
             left: 9.05%;
             top: 11.74%;
             font-family: $fonttitle;
-            font-size: 3.55vw;
+            font-size: $sizeh1;
             font-style: italic;
             color: $bluecolor;
-            text-shadow: 2px 2px 2px $goldcolor;
+            text-shadow: $shadow2px;
             transition: $transition;
             cursor: default;
 
@@ -78,11 +60,11 @@
             background-color: $bluecolor;
             align-self: center;
             cursor: pointer;
-            filter: drop-shadow(2px 2px 2px $goldcolor);
+            filter: drop-shadow($shadow2px);
             transition: $transition;
 
             &:hover {
-                filter: drop-shadow(5px 5px 5px $goldcolor);
+                filter: drop-shadow($shadow5px);
             }
 
             @media screen and (max-width:960px) {
@@ -98,7 +80,7 @@
             top: 38%;
             display: flex;
             flex-direction: column;
-            gap: 1.38vw;
+            gap: $sizebody;
             width: 40%;
             margin: 0 auto;
             font-size: 0.85vw;
@@ -131,7 +113,7 @@
                 border: 2px solid $bluecolor;
                 border-radius: 10px;
                 background-color: $whitecolor;
-                font-size: 1.38vw;
+                font-size: $sizebody;
                 color: $blackcolor;
                 font-family: $fontbody;
                 font-style: italic;
@@ -162,7 +144,7 @@
             width: 50%;
             background-color: $azurecolor;
             height: 10vh;
-            box-shadow: 2px 2px 2px $goldcolor;
+            box-shadow: $shadow2px;
 
             @media screen and (max-width: 960px) {
                 top: 42%;
@@ -177,7 +159,7 @@
                 top: 5%;
                 font-family: $fonttitle;
                 color: $bluecolor;
-                font-size: 2.37vw;
+                font-size: $sizeh2;
                 font-style: italic;
                 text-align: left;
 
@@ -207,18 +189,7 @@
     }
 
     &__spiral {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-
-        @media screen and (max-width: 960px) {
-            height: auto;
-            width: 100%;
-            aspect-ratio: $golden-inverse;
-            margin: 0 $main-margin;
-        }
+        @include spiral_shape;
 
         &--image {
             width: auto;

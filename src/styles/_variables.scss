@@ -7,6 +7,13 @@ $blackcolor: #0f1108;
 $fonttitle: "Libre Baskerville", serif;
 $fontbody: "Montserrat", sans-serif;
 
+$sizeh1: 3.55vw;
+$sizeh2: 2.37vw;
+$sizebody: 1.38vw;
+
+$shadow2px: 2px 2px 2px $goldcolor;
+$shadow5px: 5px 5px 5px $goldcolor;
+
 $main-margin: 3.125vw;
 
 $golden-ratio: 1.618 / 1;
@@ -19,14 +26,51 @@ $transition: all 0.3s ease-out;
     max-width: 1440px;
     margin-inline: auto;
     padding-inline: $main-margin;
+    position: relative;
+    aspect-ratio: $golden-ratio;
+    width: auto;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 960px) {
+        aspect-ratio: $golden-inverse;
+        height: 85vh;
+        width: 100%;
+    }
+}
+
+@mixin content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 @mixin screenshots {
-    filter: drop-shadow(5px 5px 5px $goldcolor);
+    filter: drop-shadow($shadow5px);
     scale: 3.5;
     z-index: 6;
     border-radius: 0;
     border: none;
+}
+
+@mixin spiral_shape {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    @media screen and (max-width: 960px) {
+        height: auto;
+        width: 100%;
+        aspect-ratio: $golden-inverse;
+        margin: 0 $main-margin;
+    }
 }
 
 @mixin spiral__transformation--home {
