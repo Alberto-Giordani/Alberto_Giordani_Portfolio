@@ -1,7 +1,29 @@
+import { useRef, useState } from "react";
 import "./Contact.scss";
 import spiralContact from "../../assets/spirals/spiralContact.svg";
 
 function Contact() {
+    const formRef = useRef();
+    const [submitted, setSubmitted] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(formRef.current);
+
+        try {
+            await fetch("https://getform.io/f/amdmlrob", {
+                method: "POST",
+                body: formData,
+            });
+
+            setSubmitted(true);
+            formRef.current.reset();
+        } catch (error) {
+            alert(`Erreur ${error.message} lors de l'envoi. Veuillez réessayer`);
+        }
+    };
+
     return (
         <section className="contact">
             <div className="contact__content">
@@ -16,46 +38,53 @@ function Contact() {
                         <section className="contact__text">
                             <h1>Idées, <span>questions ?</span></h1>
 
-                            <form
-                                className="contact__text--form"
-                                action="https://getform.io/f/amdmlrob"
-                                method="POST"
-                            >
-                                <div className="contact__text--group">
-                                    <label htmlFor="nom">Nom</label>
-                                    <input
-                                        type="text"
-                                        id="nom"
-                                        name="nom"
-                                        placeholder="Votre nom"
-                                        required
-                                    />
-                                </div>
+                            {submitted ? (
+                                <h2 className="contact__text--thanks">
+                                    Merci pour votre message !
+                                </h2>
+                            ) : (
 
-                                <div className="contact__text--group">
-                                    <label htmlFor="email">Email</label>
-                                    <input
-                                        type="text"
-                                        id="email"
-                                        name="email"
-                                        placeholder="Votre email"
-                                        required
-                                    />
-                                </div>
+                                < form
+                                    className="contact__text--form"
+                                    ref={formRef}
+                                    onSubmit={handleSubmit}
+                                >
+                                    <div className="contact__text--group">
+                                        <label htmlFor="nom">Nom</label>
+                                        <input
+                                            type="text"
+                                            id="nom"
+                                            name="nom"
+                                            placeholder="Votre nom"
+                                            required
+                                        />
+                                    </div>
 
-                                <div className="contact__text--group">
-                                    <label htmlFor="message">Message</label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        placeholder="Votre message"
-                                        rows="3"
-                                        required
-                                    />
-                                </div>
+                                    <div className="contact__text--group">
+                                        <label htmlFor="email">Email</label>
+                                        <input
+                                            type="text"
+                                            id="email"
+                                            name="email"
+                                            placeholder="Votre email"
+                                            required
+                                        />
+                                    </div>
 
-                                <button type="submit">Envoyer</button>
-                            </form>
+                                    <div className="contact__text--group">
+                                        <label htmlFor="message">Message</label>
+                                        <textarea
+                                            id="message"
+                                            name="message"
+                                            placeholder="Votre message"
+                                            rows="3"
+                                            required
+                                        />
+                                    </div>
+
+                                    <button type="submit">Envoyer</button>
+                                </form>
+                            )}
 
                         </section>
                     </div>
