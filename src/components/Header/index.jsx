@@ -29,7 +29,7 @@ function Header() {
                 {isMobile ? (
                     <BurgerMenu />
                 ) : (
-                    <div className="header__links">
+                    <nav className="header__links">
                         {["/", "/apropos", "/projets", "/cv", "/contact"].map((path, i) => (
                             <NavLink
                                 key={path}
@@ -41,7 +41,7 @@ function Header() {
                                 {["Home", "À Propos", "Projets", "CV", "Contact"][i]}
                             </NavLink>
                         ))}
-                    </div>
+                    </nav>
                 )}
             </div>
         </header>
