@@ -22,9 +22,9 @@ function BurgerMenu() {
 
             <nav className={`burger-panel ${isOpen ? "open" : ""}`} onClick={closeMenu}>
                 <ul className="burger-links">
-                    {["/", "/apropos", "/projets", "/cv", "/contact"].map((to, i) => (
-                        <li key={to}>
-                            <NavLink to={to} className={({ isActive }) =>
+                    {["/", "/apropos", "/projets", "/cv", "/contact"].map((path, i) => (
+                        <li key={path}>
+                            <NavLink to={path} className={({ isActive }) =>
                                 `burger-link${isActive ? " active" : ""}`} onClick={closeMenu}
                             >
                                 {["Accueil", "À propos", "Projets", "CV", "Contact"][i]}

@@ -5,13 +5,17 @@ import { useState, useEffect } from "react";
 import BurgerMenu from "../BurgerMenu";
 
 function Header() {
+
+    // Contrôle pour connaître la largeur de la page
     const [isMobile, setIsMobile] = useState(window.innerWidth < 960);
 
+    // Contrôle si la dimension change et gère les effets de bord
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 960);
         };
         window.addEventListener("resize", handleResize);
+        // Si on ferme la page on arrête d'êcouter, afin d'économiser l'énergie
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 

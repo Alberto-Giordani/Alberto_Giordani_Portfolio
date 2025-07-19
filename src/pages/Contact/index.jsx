@@ -12,6 +12,8 @@ function Contact() {
 
         const formData = new FormData(formRef.current);
 
+        // On fait un appel API à getform.io pour envoyer les données du formulaire
+        // et on gère les erreurs éventuels 
         try {
             await fetch("https://getform.io/f/amdmlrob", {
                 method: "POST",

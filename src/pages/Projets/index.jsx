@@ -7,6 +7,8 @@ import ProjetsData from "../../data/projets.json";
 import "./Projets.scss";
 
 function Projets() {
+
+    // On crée les variables pour gérer le déroulement des projets
     const [index, setIndex] = useState(0);
     const total = ProjetsData.length;
 

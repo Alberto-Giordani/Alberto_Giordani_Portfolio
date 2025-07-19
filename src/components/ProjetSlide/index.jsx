@@ -1,6 +1,8 @@
 import "./ProjetSlide.scss";
 
 function ProjetSlide({ projet }) {
+
+    // Mapping du tableau projets.json pour générer dynamiquement du contenu
     return (
         <article className="slide">
             <div className="slide__left">
