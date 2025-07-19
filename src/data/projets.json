@@ -5,7 +5,7 @@
         "description": [
             "Application bancaire avec React & Redux",
             "Formulaires, authentification, requêtes API",
-            "Mock API créé pour rendre le site visible",
+            "Mock API créé pour rendre le site utilisable",
             "Utilisez l'username tony@iron.com et le mot de passe iron123 pour accéder"
         ],
         "logo": "/assets/logos/logoArgentBank.webp",
