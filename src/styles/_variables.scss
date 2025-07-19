@@ -1,26 +1,34 @@
+// Couleurs
 $bluecolor: #002fa7;
 $azurecolor: #bfd8e4;
 $goldcolor: #a77800;
 $whitecolor: #f4f7f5;
 $blackcolor: #0f1108;
 
+// Polices
 $fonttitle: "Libre Baskerville", serif;
 $fontbody: "Montserrat", sans-serif;
 
+// Dimensions
 $sizeh1: 3.55vw;
 $sizeh2: 2.37vw;
 $sizebody: 1.38vw;
 
+// Ombres
 $shadow2px: 2px 2px 2px $goldcolor;
 $shadow5px: 5px 5px 5px $goldcolor;
 
+// Marges
 $main-margin: 3.125vw;
 
+// Proportions
 $golden-ratio: 1.618 / 1;
 $golden-inverse: 1 / 1.618;
 
+// Effets de transition
 $transition: all 0.3s ease-out;
 
+// Mixins
 @mixin container {
     width: 100%;
     max-width: 1440px;
