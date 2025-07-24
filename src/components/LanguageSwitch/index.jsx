@@ -12,6 +12,7 @@ function LanguageSwitch() {
         <select value={i18n.language} onChange={changeLanguage} className="lang-switch" aria-label="Language selector">
             <option value="fr">FR</option>
             <option value="it">IT</option>
+            <option value="en">EN</option>
         </select>
     );
 }

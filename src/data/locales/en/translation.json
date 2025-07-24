@@ -1,0 +1,121 @@
+{
+    "nav": {
+        "home": "Home",
+        "apropos": "About",
+        "projets": "Projects",
+        "cv": "Resume",
+        "contact": "Contact",
+        "homeMobile": "Home",
+        "aproposMobile": "About"
+    },
+    "burger": {
+        "open": "Open menu",
+        "close": "Close menu"
+    },
+    "common": {
+        "fibonacci": "Fibonacci spiral"
+    },
+    "home": {
+        "firstname": "Alberto",
+        "lastname": "Giordani",
+        "portfolio": "Portfolio",
+        "role": "Front-End Developer"
+    },
+    "apropos": {
+        "title": "About",
+        "paragraph": "Hello, my name is <bold>Alberto Giordani</bold>.<br/>Former teacher and writer, I retrained as a front-end developer driven by a passion for logic, aesthetics and rigorous code.<br/><br/>I work with <bold>HTML</bold>, <bold>Sass</bold>, <bold>JavaScript</bold> and <bold>React</bold>, focusing on accessibility, performance and responsive design.<br/><br/>This portfolio is a technical showcase but also a reflection of my journey and aspirations.",
+        "motto": "Code with rigor<br/>Create with meaning"
+    },
+    "projets": {
+        "prev": "Previous",
+        "next": "Next",
+        "alt": "Page structure"
+    },
+    "cv": {
+        "title": "My resume",
+        "download": "Download my resume (PDF)",
+        "formation": "Education",
+        "formations": [
+            {
+                "title": "OpenClassrooms — Web Developer Diploma Course",
+                "subtitle": "(RNCP level 5 — 2-year degree)",
+                "description": "HTML, CSS, Sass, JavaScript, React, Redux, accessibility, SEO, responsive design"
+            },
+            {
+                "title": "IUAV University — Venice, Italy",
+                "subtitle": "(Master's degree — 5-year degree)",
+                "description": "Theatre Sciences and Techniques — Dramaturgical analysis, directing, cultural mediation. Teaching and writing experience."
+            }
+        ],
+        "experience": "Work experience",
+        "experiences": [
+            {
+                "title": "Since 2018: Receptionist — Cegos Training Center, Paris",
+                "details": [
+                    "Welcoming visitors, handling calls and administrative follow-up. Supporting trainers and the training coordination.",
+                    "<italic>Transferable skills: listening, organization, customer relations, autonomy.</italic>"
+                ]
+            },
+            {
+                "title": "2014–2018: Mailroom Supervisor — ANSM via Elior, Saint-Denis",
+                "details": [
+                    "Team supervision, handling sensitive administrative mail. Liaison with various departments.",
+                    "<italic>Transferable skills: rigor, priority management, teamwork.</italic>"
+                ]
+            },
+            {
+                "title": "2004–2024: Writer / Director / Teacher — Italy / France",
+                "details": [
+                    "Conception of cultural projects, directing actors, university teaching (theatre history, dramaturgy), mediation.",
+                    "<italic>Transferable skills: analytical mind, communication, creativity, pedagogy.</italic>"
+                ]
+            }
+        ],
+        "skillsTitle": "Technical skills",
+        "skills": [
+            "HTML / CSS / Sass",
+            "Accessibility / SEO",
+            "Responsive design",
+            "Git / GitHub",
+            "JavaScript",
+            "React / Redux",
+            "Web performance (Lighthouse)",
+            "Figma / Photoshop"
+        ],
+        "langsTitle": "Languages",
+        "langs": [
+            "Italian",
+            "French",
+            "English"
+        ],
+        "softTitle": "Soft skills",
+        "soft": [
+            "Creativity",
+            "Autonomy",
+            "Rigor",
+            "Attention to detail",
+            "Quick learning",
+            "Interpersonal skills",
+            "Teamwork",
+            "Versatility",
+            "Sense of aesthetics"
+        ]
+    },
+    "contact": {
+        "title": "Ideas, <1>questions?</1>",
+        "thanks": "Thank you for your message!",
+        "close": "Close message",
+        "labels": {
+            "nom": "Name",
+            "email": "Email",
+            "message": "Message"
+        },
+        "placeholders": {
+            "nom": "Your name",
+            "email": "Your email",
+            "message": "Your message"
+        },
+        "submit": "Send",
+        "error": "Error {{message}} when sending. Please try again"
+    }
+}

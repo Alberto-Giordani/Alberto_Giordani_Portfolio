@@ -3,7 +3,12 @@ import spiralCv from "../../assets/spirals/spiralCv.svg";
 import { useTranslation } from "react-i18next";
 
 function CV() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const pdfFile = {
+        fr: '/CV_Alberto_Giordani_fr.pdf',
+        it: '/CV_Alberto_Giordani_it.pdf',
+        en: '/CV_Alberto_Giordani_en.pdf'
+    }[i18n.language] || '/CV_Alberto_Giordani_fr.pdf';
     const formations = t('cv.formations', { returnObjects: true });
     const experiences = t('cv.experiences', { returnObjects: true });
     const skills = t('cv.skills', { returnObjects: true });
@@ -23,11 +28,11 @@ function CV() {
                         <div className="cv__pdf">
                             <iframe
                                 className="cv__pdf--viewer"
-                                src="/CV_Alberto_Giordani_fr.pdf"
+                                src={pdfFile}
                                 title="CV Alberto Giordani"
                             />
                             <a
-                                href="/CV_Alberto_Giordani_fr.pdf"
+                                href={pdfFile}
                                 download
                                 className="cv__pdf--link"
                             >

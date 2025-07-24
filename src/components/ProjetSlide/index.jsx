@@ -23,7 +23,7 @@ function ProjetSlide({ projet }) {
                 </ul>
                 <div className="slide__right--links">
                     <a href={projet.github} target="_blank" rel="noreferrer">GitHub</a> <br />
-                    <a href={projet.site} target="_blank" rel="noreferrer">Voir le site</a>
+                    <a href={projet.site} target="_blank" rel="noreferrer">Website</a>
                 </div>
             </div>
         </article>

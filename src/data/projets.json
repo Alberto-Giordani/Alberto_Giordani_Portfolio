@@ -1,13 +1,31 @@
 [
     {
         "id": "argentbank",
-        "title": "ArgentBank",
-        "description": [
-            "Application bancaire avec React & Redux",
-            "Formulaires, authentification, requêtes API",
-            "Mock API créé pour rendre le site utilisable",
-            "Utilisez l'username tony@iron.com et le mot de passe iron123 pour accéder"
-        ],
+        "title": {
+            "fr": "ArgentBank",
+            "it": "ArgentBank",
+            "en": "ArgentBank"
+        },
+        "description": {
+            "fr": [
+                "Application bancaire avec React & Redux",
+                "Formulaires, authentification, requêtes API",
+                "Mock API créé pour rendre le site utilisable",
+                "Utilisez l'username tony@iron.com et le mot de passe iron123 pour accéder"
+            ],
+            "it": [
+                "Applicazione bancaria con React e Redux",
+                "Form gestiti, autenticazione, richieste API",
+                "Mock API creata per rendere il sito utilizzabile",
+                "Usa l'username tony@iron.com e la password iron123 per accedere"
+            ],
+            "en": [
+                "Banking application using React & Redux",
+                "Forms, authentication and API requests",
+                "Mock API created to make the site usable",
+                "Use username tony@iron.com and password iron123 to log in"
+            ]
+        },
         "logo": "/assets/logos/logoArgentBank.webp",
         "images": [
             "/assets/screen/ArgentBank_1.webp",
@@ -19,13 +37,31 @@
     },
     {
         "id": "kasa",
-        "title": "Kasa",
-        "description": [
-            "Site d’annonces immobilières style Airbnb",
-            "Projet organisé de manière modulaire avec React",
-            "Routing dynamique avec React Router",
-            "Composants interactifs"
-        ],
+        "title": {
+            "fr": "Kasa",
+            "it": "Kasa",
+            "en": "Kasa"
+        },
+        "description": {
+            "fr": [
+                "Site d’annonces immobilières style Airbnb",
+                "Projet organisé de manière modulaire avec React",
+                "Routing dynamique avec React Router",
+                "Composants interactifs"
+            ],
+            "it": [
+                "Sito di annunci immobiliari stile Airbnb",
+                "Progetto organizzato in modo modulare con React",
+                "Routing dinamico con React Router",
+                "Componenti interattivi"
+            ],
+            "en": [
+                "Real estate listings website similar to Airbnb",
+                "Project structured in a modular way with React",
+                "Dynamic routing using React Router",
+                "Interactive components"
+            ]
+        },
         "logo": "/assets/logos/logoKasa.webp",
         "images": [
             "/assets/screen/Kasa_1.webp",
@@ -37,13 +73,31 @@
     },
     {
         "id": "ohmyfood",
-        "title": "Ohmyfood",
-        "description": [
-            "Site de réservation dans des restaurants",
-            "Interface moderne et responsive",
-            "Animations et transitions réalisées avec Sass",
-            "Design mobile-first"
-        ],
+        "title": {
+            "fr": "Ohmyfood",
+            "it": "Ohmyfood",
+            "en": "Ohmyfood"
+        },
+        "description": {
+            "fr": [
+                "Site de réservation dans des restaurants",
+                "Interface moderne et responsive",
+                "Animations et transitions réalisées avec Sass",
+                "Design mobile-first"
+            ],
+            "it": [
+                "Sito di prenotazione ristoranti",
+                "Interfaccia moderna e responsive",
+                "Animazioni e transizioni realizzate con Sass",
+                "Design mobile-first"
+            ],
+            "en": [
+                "Restaurant reservation website",
+                "Modern and responsive interface",
+                "Animations and transitions built with Sass",
+                "Mobile-first design"
+            ]
+        },
         "logo": "/assets/logos/logoOhmyfood.webp",
         "images": [
             "/assets/screen/Ohmyfood_1.webp",

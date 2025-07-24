@@ -8,11 +8,16 @@ import { useTranslation } from "react-i18next";
 import "./Projets.scss";
 
 function Projets() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const projets = ProjetsData.map((p) => ({
+        ...p,
+        title: p.title[i18n.language] || p.title.fr,
+        description: p.description[i18n.language] || p.description.fr
+    }));
 
     // On crée les variables pour gérer le déroulement des projets
     const [index, setIndex] = useState(0);
-    const total = ProjetsData.length;
+    const total = projets.length;
 
     const next = () => setIndex((index + 1) % total);
     const prev = () => setIndex((index - 1 + total) % total);
@@ -32,7 +37,7 @@ function Projets() {
                             className="projets__spiral--image"
                         />
                         <div className="projets__spiral--content">
-                            <ProjetSlider projet={ProjetsData[index]} />
+                            <ProjetSlider projet={projets[index]} />
                         </div>
                     </div>
                 </div>
