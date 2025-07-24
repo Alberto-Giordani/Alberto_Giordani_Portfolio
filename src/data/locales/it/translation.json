@@ -1,0 +1,121 @@
+{
+    "nav": {
+        "home": "Home",
+        "apropos": "Chi Sono",
+        "projets": "Progetti",
+        "cv": "CV",
+        "contact": "Contatto",
+        "homeMobile": "Home",
+        "aproposMobile": "Chi sono"
+    },
+    "burger": {
+        "open": "Apri il menu",
+        "close": "Chiudi il menu"
+    },
+    "common": {
+        "fibonacci": "Spirale di Fibonacci"
+    },
+    "home": {
+        "firstname": "Alberto",
+        "lastname": "Giordani",
+        "portfolio": "Portfolio",
+        "role": "Sviluppatore Front-End"
+    },
+    "apropos": {
+        "title": "Chi sono",
+        "paragraph": "Ciao, mi chiamo <bold>Alberto Giordani</bold>.<br/>Ex insegnante e autore, mi sono riconvertito nello sviluppo front-end per passione verso la logica, l'estetica e il rigore del codice.<br/><br/>Lavoro con <bold>HTML</bold>, <bold>Sass</bold>, <bold>JavaScript</bold> e <bold>React</bold> e curo accessibilità, performance e responsive design.<br/><br/>Questo portfolio è una vetrina tecnica ma anche il riflesso del mio percorso e delle mie aspirazioni.",
+        "motto": "Codifica con rigore<br/>Crea con senso"
+    },
+    "projets": {
+        "prev": "Precedente",
+        "next": "Successivo",
+        "alt": "Struttura della pagina"
+    },
+    "cv": {
+        "title": "Il mio CV",
+        "download": "Scarica il mio CV (PDF)",
+        "formation": "Formazione",
+        "formations": [
+            {
+                "title": "OpenClassrooms — Corso diploma Integratore Web",
+                "subtitle": "(RNCP livello 5 — Bac+2)",
+                "description": "HTML, CSS, Sass, JavaScript, React, Redux, accessibilità, SEO, responsive design"
+            },
+            {
+                "title": "Università IUAV — Venezia, Italia",
+                "subtitle": "(Master — Bac+5)",
+                "description": "Scienze e Tecniche del Teatro — Analisi drammaturgica, regia, mediazione culturale. Esperienza pedagogica e redazionale."
+            }
+        ],
+        "experience": "Esperienze professionali",
+        "experiences": [
+            {
+                "title": "Dal 2018: Addetto alla reception — Centro di formazione Cegos, Parigi",
+                "details": [
+                    "Accoglienza del pubblico, gestione delle chiamate e del follow-up amministrativo. Supporto ai formatori e al coordinamento pedagogico.",
+                    "<italic>Competenze trasversali: ascolto, organizzazione, relazione con i clienti, autonomia.</italic>"
+                ]
+            },
+            {
+                "title": "2014–2018: Responsabile servizio postale — ANSM tramite Elior, Saint-Denis",
+                "details": [
+                    "Supervisione di un team, gestione della posta amministrativa riservata. Interfaccia con diverse direzioni.",
+                    "<italic>Competenze trasversali: rigore, gestione delle priorità, lavoro di squadra.</italic>"
+                ]
+            },
+            {
+                "title": "2004–2024: Autore / Regista / Docente — Italia / Francia",
+                "details": [
+                    "Ideazione di progetti culturali, direzione attoriale, insegnamento universitario (storia del teatro, drammaturgia), mediazione culturale.",
+                    "<italic>Competenze trasversali: spirito analitico, comunicazione, creatività, pedagogia.</italic>"
+                ]
+            }
+        ],
+        "skillsTitle": "Competenze tecniche",
+        "skills": [
+            "HTML / CSS / Sass",
+            "Accessibilità / SEO",
+            "Responsive design",
+            "Git / GitHub",
+            "JavaScript",
+            "React / Redux",
+            "Performance web (Lighthouse)",
+            "Figma / Photoshop"
+        ],
+        "langsTitle": "Lingue",
+        "langs": [
+            "Italiano",
+            "Francese",
+            "Inglese"
+        ],
+        "softTitle": "Competenze",
+        "soft": [
+            "Creatività",
+            "Autonomia",
+            "Rigore",
+            "Senso del dettaglio",
+            "Apprendimento rapido",
+            "Comunicazione interpersonale",
+            "Lavoro in squadra",
+            "Polivalenza",
+            "Senso estetico"
+        ]
+    },
+    "contact": {
+        "title": "Idee, <1>domande?</1>",
+        "thanks": "Grazie per il tuo messaggio!",
+        "close": "Chiudi il messaggio",
+        "labels": {
+            "nom": "Nome",
+            "email": "Email",
+            "message": "Messaggio"
+        },
+        "placeholders": {
+            "nom": "Il tuo nome",
+            "email": "La tua email",
+            "message": "Il tuo messaggio"
+        },
+        "submit": "Invia",
+        "error": "Errore {{message}} durante l'invio. Riprova"
+    }
+}

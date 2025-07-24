@@ -1,0 +1,121 @@
+{
+    "nav": {
+        "home": "Home",
+        "apropos": "À Propos",
+        "projets": "Projets",
+        "cv": "CV",
+        "contact": "Contact",
+        "homeMobile": "Accueil",
+        "aproposMobile": "À propos"
+    },
+    "burger": {
+        "open": "Ouvrir le menu",
+        "close": "Fermer le menu"
+    },
+    "common": {
+        "fibonacci": "Spirale de Fibonacci"
+    },
+    "home": {
+        "firstname": "Alberto",
+        "lastname": "Giordani",
+        "portfolio": "Portfolio",
+        "role": "Développeur Front-End"
+    },
+    "apropos": {
+        "title": "À propos",
+        "paragraph": "Bonjour, je m'appelle <bold>Alberto Giordani</bold>.<br/>Ancien enseignant et auteur, je me suis reconverti en développeur front-end par passion pour la logique, l’esthétique et la rigueur du code.<br/><br/>Je travaille avec <bold>HTML</bold>, <bold>Sass</bold>, <bold>JavaScript</bold> et <bold>React</bold>, et m'attache à l'accessibilité, la performance et le responsive design.<br/><br/>Ce portfolio est une vitrine technique mais aussi une réflexion de mon parcours et de mes aspirations.",
+        "motto": "Code avec rigueur<br/>Crée avec sens"
+    },
+    "projets": {
+        "prev": "Précédent",
+        "next": "Suivant",
+        "alt": "Structure de la page"
+    },
+    "cv": {
+        "title": "Mon CV",
+        "download": "Télécharger mon CV (PDF)",
+        "formation": "Formation",
+        "formations": [
+            {
+                "title": "OpenClassrooms — Formation diplômante Intégrateur Web",
+                "subtitle": "(RNCP niveau 5 — Bac+2)",
+                "description": "HTML, CSS, Sass, JavaScript, React, Redux, accessibilité, SEO, responsive design"
+            },
+            {
+                "title": "Université IUAV — Venise, Italie",
+                "subtitle": "(Master — Bac+5)",
+                "description": "Sciences et Techniques du Théâtre — Analyse dramaturgique, mise en scène, médiation culturelle. Expérience pédagogique et rédactionnelle."
+            }
+        ],
+        "experience": "Expériences professionnelles",
+        "experiences": [
+            {
+                "title": "Depuis 2018 : Chargé d’accueil — Centre de formation Cegos, Paris",
+                "details": [
+                    "Accueil du public, gestion des appels et du suivi administratif. Soutien aux formateurs et à la coordination pédagogique.",
+                    "<italic>Compétences transversales : écoute, organisation, relation client, autonomie.</italic>"
+                ]
+            },
+            {
+                "title": "2014–2018 : Responsable courrier — ANSM via Elior, Saint-Denis",
+                "details": [
+                    "Supervision d’équipe, traitement du courrier administratif sensible. Interface avec plusieurs directions.",
+                    "<italic>Compétences transversales : rigueur, gestion de priorités, travail en équipe.</italic>"
+                ]
+            },
+            {
+                "title": "2004–2024 : Auteur / Metteur en scène / Enseignant — Italie / France",
+                "details": [
+                    "Conception de projets culturels, direction d’acteurs, enseignement universitaire (histoire du théâtre, dramaturgie), médiation.",
+                    "<italic>Compétences transversales : esprit d’analyse, communication, créativité, pédagogie.</italic>"
+                ]
+            }
+        ],
+        "skillsTitle": "Compétences techniques",
+        "skills": [
+            "HTML / CSS / Sass",
+            "Accessibilité / SEO",
+            "Responsive design",
+            "Git / GitHub",
+            "JavaScript",
+            "React / Redux",
+            "Performance web (Lighthouse)",
+            "Figma / Photoshop"
+        ],
+        "langsTitle": "Langues",
+        "langs": [
+            "Italien",
+            "Français",
+            "Anglais"
+        ],
+        "softTitle": "Savoir-être",
+        "soft": [
+            "Créativité",
+            "Autonomie",
+            "Rigueur",
+            "Sens du détail",
+            "Apprentissage rapide",
+            "Aisance relationnelle",
+            "Travail en équipe",
+            "Polyvalence",
+            "Sens esthétique"
+        ]
+    },
+    "contact": {
+        "title": "Idées, <1>questions ?</1>",
+        "thanks": "Merci pour votre message !",
+        "close": "Fermeture du message",
+        "labels": {
+            "nom": "Nom",
+            "email": "Email",
+            "message": "Message"
+        },
+        "placeholders": {
+            "nom": "Votre nom",
+            "email": "Votre email",
+            "message": "Votre message"
+        },
+        "submit": "Envoyer",
+        "error": "Erreur {{message}} lors de l'envoi. Veuillez réessayer"
+    }
+}

@@ -1,7 +1,9 @@
 import "./Home.scss";
 import spiralHome from "../../assets/spirals/spiralHome.svg";
+import { useTranslation, Trans } from "react-i18next";
 
 function Home() {
+    const { t } = useTranslation();
     return (
         <section className="home">
             <div className="home__content">
@@ -10,15 +12,15 @@ function Home() {
                         <img
                             className="home__spiral--image"
                             src={spiralHome}
-                            alt="Spirale de Fibonacci"
+                            alt={t('common.fibonacci')}
                         />
                         <div className="home__text">
                             <h1>
-                                <span>Alberto</span> <br />
-                                <span>Giordani</span>
+                                <span>{t('home.firstname')}</span> <br />
+                                <span>{t('home.lastname')}</span>
                             </h1>
-                            <h2>Portfolio</h2>
-                            <h3>Développeur Front-End</h3>
+                            <h2>{t('home.portfolio')}</h2>
+                            <h3>{t('home.role')}</h3>
                         </div>
                     </div>
                 </div>

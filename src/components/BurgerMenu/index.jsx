@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./BurgerMenu.scss";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import menuIcon from "../../assets/icons/menu.svg";
 import closeIcon from "../../assets/icons/close.svg";
 
 function BurgerMenu() {
     const [isOpen, setIsOpen] = useState(false);
+    const { t } = useTranslation();
 
     const toggleMenu = () => setIsOpen(prev => !prev);
     const closeMenu = () => setIsOpen(false);
@@ -15,7 +17,7 @@ function BurgerMenu() {
             <button className="burger-button" onClick={toggleMenu} aria-label="Menu">
                 <img
                     src={isOpen ? closeIcon : menuIcon}
-                    alt={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
+                    alt={isOpen ? t('burger.close') : t('burger.open')}
                     className={`burger-icon ${isOpen ? "open" : "closed"}`}
                 />
             </button>
@@ -27,7 +29,13 @@ function BurgerMenu() {
                             <NavLink to={path} className={({ isActive }) =>
                                 `burger-link${isActive ? " active" : ""}`} onClick={closeMenu}
                             >
-                                {["Accueil", "À propos", "Projets", "CV", "Contact"][i]}
+                                {[
+                                    t('nav.homeMobile'),
+                                    t('nav.aproposMobile'),
+                                    t('nav.projets'),
+                                    t('nav.cv'),
+                                    t('nav.contact')
+                                ][i]}
                             </NavLink>
                         </li>
                     ))}

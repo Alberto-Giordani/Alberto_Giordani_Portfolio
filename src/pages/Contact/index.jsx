@@ -2,10 +2,12 @@ import { useRef, useState } from "react";
 import "./Contact.scss";
 import spiralContact from "../../assets/spirals/spiralContact.svg";
 import closeIcon from "../../assets/icons/close.svg";
+import { useTranslation, Trans } from "react-i18next";
 
 function Contact() {
     const formRef = useRef();
     const [submitted, setSubmitted] = useState(false);
+    const { t } = useTranslation();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -23,7 +25,7 @@ function Contact() {
             setSubmitted(true);
             formRef.current.reset();
         } catch (error) {
-            alert(`Erreur ${error.message} lors de l'envoi. Veuillez réessayer`);
+            alert(t('contact.error', { message: error.message }));
         }
     };
 
@@ -35,64 +37,62 @@ function Contact() {
                         <img
                             className="contact__spiral--image"
                             src={spiralContact}
-                            alt="Spirale de Fibonacci"
+                            alt={t('common.fibonacci')}
                         />
 
                         <section className="contact__text">
-                            <h1>Idées, <span>questions ?</span></h1>
+                            <h1><Trans i18nKey="contact.title" components={{ 1: <span /> }} /></h1>
 
                             {submitted ? (
                                 <div className="contact__text--thanks">
-                                    <h2>
-                                        Merci pour votre message !
-                                    </h2>
+                                    <h2>{t('contact.thanks')}</h2>
                                     <img
                                         src={closeIcon}
-                                        alt="Fermeture du message"
+                                        alt={t('contact.close')}
                                         onClick={() => setSubmitted(false)}
                                     />
                                 </div>
                             ) : (
 
-                                < form
+                                <form
                                     className="contact__text--form"
                                     ref={formRef}
                                     onSubmit={handleSubmit}
                                 >
                                     <div className="contact__text--group">
-                                        <label htmlFor="nom">Nom</label>
+                                        <label htmlFor="nom">{t('contact.labels.nom')}</label>
                                         <input
                                             type="text"
                                             id="nom"
                                             name="nom"
-                                            placeholder="Votre nom"
+                                            placeholder={t('contact.placeholders.nom')}
                                             required
                                         />
                                     </div>
 
                                     <div className="contact__text--group">
-                                        <label htmlFor="email">Email</label>
+                                        <label htmlFor="email">{t('contact.labels.email')}</label>
                                         <input
                                             type="text"
                                             id="email"
                                             name="email"
-                                            placeholder="Votre email"
+                                            placeholder={t('contact.placeholders.email')}
                                             required
                                         />
                                     </div>
 
                                     <div className="contact__text--group">
-                                        <label htmlFor="message">Message</label>
+                                        <label htmlFor="message">{t('contact.labels.message')}</label>
                                         <textarea
                                             id="message"
                                             name="message"
-                                            placeholder="Votre message"
+                                            placeholder={t('contact.placeholders.message')}
                                             rows="3"
                                             required
                                         />
                                     </div>
 
-                                    <button type="submit">Envoyer</button>
+                                    <button type="submit">{t('contact.submit')}</button>
                                 </form>
                             )}
 

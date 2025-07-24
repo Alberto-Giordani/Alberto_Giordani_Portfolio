@@ -4,9 +4,11 @@ import spiral from "../../assets/spirals/spiralProjets.svg";
 import arrowLeft from "../../assets/icons/arrowLeft.svg";
 import arrowRight from "../../assets/icons/arrowRight.svg";
 import ProjetsData from "../../data/projets.json";
+import { useTranslation } from "react-i18next";
 import "./Projets.scss";
 
 function Projets() {
+    const { t } = useTranslation();
 
     // On crée les variables pour gérer le déroulement des projets
     const [index, setIndex] = useState(0);
@@ -19,14 +21,14 @@ function Projets() {
     return (
         <section className="projets">
             <button className="projets__arrow projets__arrow--left" onClick={prev}>
-                <img src={arrowLeft} alt="Précédent" />
+                <img src={arrowLeft} alt={t('projets.prev')} />
             </button>
             <div className="projets__content">
                 <div className="projets__container">
                     <div className="projets__spiral">
                         <img
                             src={spiral}
-                            alt="Structure de la page"
+                            alt={t('projets.alt')}
                             className="projets__spiral--image"
                         />
                         <div className="projets__spiral--content">
@@ -36,7 +38,7 @@ function Projets() {
                 </div>
             </div>
             <button className="projets__arrow projets__arrow--right" onClick={next}>
-                <img src={arrowRight} alt="Suivant" />
+                <img src={arrowRight} alt={t('projets.next')} />
             </button>
         </section>
     )

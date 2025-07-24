@@ -1,8 +1,10 @@
 import "./APropos.scss";
 import spiralAPropos from "../../assets/spirals/spiralAPropos.svg";
 import photoGiordani from "../../assets/images/photo_Giordani.webp";
+import { useTranslation, Trans } from "react-i18next";
 
 function APropos() {
+    const { t } = useTranslation();
     return (
         <section className="apropos">
             <div className="apropos__content">
@@ -11,7 +13,7 @@ function APropos() {
                         <img
                             className="apropos__spiral--image"
                             src={spiralAPropos}
-                            alt="Spirale de Fibonacci"
+                            alt={t('common.fibonacci')}
                         />
 
                         <div className="apropos__photo">
@@ -22,20 +24,13 @@ function APropos() {
                             />
                         </div>
                         <div className="apropos__text">
-                            <h1>À propos</h1>
+                            <h1>{t('apropos.title')}</h1>
 
                             <p>
-                                Bonjour, je m'appelle <span>Alberto Giordani</span>.<br />
-                                Ancien enseignant et auteur, je me suis reconverti en développeur front-end
-                                par passion pour la logique, l’esthétique et la rigueur du code.<br /><br />
-                                Je travaille avec <span>HTML</span>, <span>Sass</span>, <span>JavaScript</span> et <span>React</span>,
-                                et m'attache à l'accessibilité, la performance
-                                et le responsive design.<br /><br />
-                                Ce portfolio est une vitrine technique mais aussi une réflexion de mon parcours
-                                et de mes aspirations.
+                                <Trans i18nKey="apropos.paragraph" components={{ bold: <span /> }} />
                             </p>
 
-                            <h2>Code avec rigueur<br />Crée avec sens</h2>
+                            <h2><Trans i18nKey="apropos.motto" /></h2>
                         </div>
                     </div>
                 </div>

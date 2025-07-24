@@ -1,0 +1,12 @@
+@use "../../styles/variables" as *;
+
+.lang-switch {
+    font-family: $fontbody;
+    font-weight: 500;
+    border-color: $bluecolor;
+
+    &:focus {
+        outline: none;
+        border-color: $goldcolor;
+    }
+}

@@ -18,6 +18,10 @@
         width: 100%;
     }
 
+    &__content {
+        @include content;
+    }
+
     &__logo {
         &--image {
             height: 10vh;
