@@ -1,5 +1,23 @@
+@use "../styles/variables" as *;
+
 *,
 body {
     margin: 0;
     padding: 0;
+}
+
+a {
+    color: $bluecolor;
+    text-decoration: none;
+    transition: $transition;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: lighten($bluecolor, 15%);
+}
+
+a:focus-visible {
+    outline: 2px solid $goldcolor;
+    outline-offset: 2px;
 }

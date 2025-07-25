@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProjetSlider from "../../components/ProjetSlider";
 import spiral from "../../assets/spirals/spiralProjets.svg";
 import arrowLeft from "../../assets/icons/arrowLeft.svg";
@@ -19,14 +19,25 @@ function Projets() {
     const [index, setIndex] = useState(0);
     const total = projets.length;
 
-    const next = () => setIndex((index + 1) % total);
-    const prev = () => setIndex((index - 1 + total) % total);
+    const next = () => setIndex((i) => (i + 1) % total);
+    const prev = () => setIndex((i) => (i - 1 + total) % total);
 
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === 'ArrowRight') {
+                setIndex((i) => (i + 1) % total);
+            } else if (e.key === 'ArrowLeft') {
+                setIndex((i) => (i - 1 + total) % total);
+            }
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [total]);
 
     return (
         <section className="projets">
             <button className="projets__arrow projets__arrow--left" onClick={prev}>
-                <img src={arrowLeft} alt={t('projets.prev')} />
+                <img src={arrowLeft} alt={t('projets.prev')} loading="lazy" />
             </button>
             <div className="projets__content">
                 <div className="projets__container">
@@ -42,8 +53,18 @@ function Projets() {
                     </div>
                 </div>
             </div>
+            <div className="projets__indicators">
+                {projets.map((_, i) => (
+                    <button
+                        key={i}
+                        onClick={() => setIndex(i)}
+                        aria-label={`Slide ${i + 1}`}
+                        className={`projets__indicator${i === index ? ' active' : ''}`}
+                    />
+                ))}
+            </div>
             <button className="projets__arrow projets__arrow--right" onClick={next}>
-                <img src={arrowRight} alt={t('projets.next')} />
+                <img src={arrowRight} alt={t('projets.next')} loading="lazy" />
             </button>
         </section>
     )

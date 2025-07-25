@@ -143,7 +143,7 @@
             left: 9.05%;
             width: 50%;
             background-color: $azurecolor;
-            height: 10vh;
+            height: 12vh;
             box-shadow: $shadow2px;
 
             @media screen and (max-width: 960px) {
@@ -159,12 +159,12 @@
                 top: 5%;
                 font-family: $fonttitle;
                 color: $bluecolor;
-                font-size: $sizeh2;
+                font-size: 3vw;
                 font-style: italic;
                 text-align: left;
 
                 @media screen and (max-width: 960px) {
-                    font-size: 5vw;
+                    font-size: 6vw;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);

@@ -9,13 +9,23 @@ function ProjetSlide({ projet }) {
                 <h1>{projet.title}</h1>
                 <div className="slide__left--images">
                     {projet.images.map((src, index) => (
-                        <img key={index} src={src} alt={`${projet.title} screenshot ${index + 1}`} />
+                        <img
+                            key={index}
+                            src={src}
+                            alt={`${projet.title} screenshot ${index + 1}`}
+                            loading="lazy"
+                        />
                     ))}
                 </div>
             </div>
 
             <div className="slide__right">
-                <img src={projet.logo} alt={`Logo ${projet.title}`} className="slide__right--logo" />
+                <img
+                    src={projet.logo}
+                    alt={`Logo ${projet.title}`}
+                    className="slide__right--logo"
+                    loading="lazy"
+                />
                 <ul className="slide__right--description">
                     {projet.description.map((point, i) => (
                         <li key={i}>{point}</li>

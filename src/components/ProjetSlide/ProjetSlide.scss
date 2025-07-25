@@ -148,12 +148,26 @@
             }
 
             a {
+                display: inline-block;
+                margin: 0.34vw 0.34vw 0.34vw 0;
+                padding: 0.34vw 0.68vw;
                 text-decoration: none;
                 color: $bluecolor;
+                border: 2px solid $bluecolor;
+                border-radius: 10px;
+                position: relative;
                 transition: $transition;
 
+
                 &:hover {
-                    color: $goldcolor;
+                    background-color: $bluecolor;
+                    color: $whitecolor;
+                    filter: drop-shadow($shadow5px);
+
+                    &::after {
+                        opacity: 1;
+                        right: 0.34vw;
+                    }
                 }
             }
         }

@@ -44,13 +44,16 @@ function Contact() {
                             <h1><Trans i18nKey="contact.title" components={{ 1: <span /> }} /></h1>
 
                             {submitted ? (
-                                <div className="contact__text--thanks">
-                                    <h2>{t('contact.thanks')}</h2>
-                                    <img
-                                        src={closeIcon}
-                                        alt={t('contact.close')}
-                                        onClick={() => setSubmitted(false)}
-                                    />
+                                <div aria-live="polite">
+                                    <div className="contact__text--thanks">
+                                        <h2>{t('contact.thanks')}</h2>
+                                        <img
+                                            src={closeIcon}
+                                            alt={t('contact.close')}
+                                            onClick={() => setSubmitted(false)}
+                                            loading="lazy"
+                                        />
+                                    </div>
                                 </div>
                             ) : (
 

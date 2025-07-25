@@ -89,4 +89,33 @@
             box-sizing: border-box;
         }
     }
+
+
+    &__indicators {
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.8rem;
+        z-index: 5;
+    }
+
+    &__indicator {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background-color: $azurecolor;
+        border: 1px solid $bluecolor;
+        cursor: pointer;
+
+        &.active {
+            background-color: $goldcolor;
+        }
+
+        &:focus {
+            outline: 2px solid $bluecolor;
+            outline-offset: 2px;
+        }
+    }
 }
