@@ -24,7 +24,7 @@
     "apropos": {
         "title": "About",
         "paragraph": "Hello, my name is <bold>Alberto Giordani</bold>.<br/>Former teacher and writer, I retrained as a front-end developer driven by a passion for logic, aesthetics and rigorous code.<br/><br/>I work with <bold>HTML</bold>, <bold>Sass</bold>, <bold>JavaScript</bold> and <bold>React</bold>, focusing on accessibility, performance and responsive design.<br/><br/>This portfolio is a technical showcase but also a reflection of my journey and aspirations.",
-        "motto": "Code with rigor<br/>Create with meaning"
+        "motto": "Code rigorously<br/>Create with sense"
     },
     "projets": {
         "prev": "Previous",
