@@ -26,7 +26,7 @@ function APropos() {
                         <div className="apropos__text">
                             <h1>{t('apropos.title')}</h1>
 
-                            <p>
+                            <p className="paragraph">
                                 <Trans i18nKey="apropos.paragraph" components={{ bold: <span /> }} />
                             </p>
 

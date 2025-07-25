@@ -47,7 +47,7 @@ function CV() {
                                 {formations.map((f, i) => (
                                     <li key={i}>
                                         <span className="cv__text--bold">{f.title}</span> {f.subtitle}
-                                        <p>{f.description}</p>
+                                        <p className="paragraph">{f.description}</p>
                                     </li>
                                 ))}
                             </ul> <br />
@@ -58,7 +58,7 @@ function CV() {
                                     <li key={i}>
                                         <span className="cv__text--bold">{e.title}</span>
                                         {e.details.map((d, j) => (
-                                            <p key={j} dangerouslySetInnerHTML={{ __html: d }} />
+                                            <p key={j} className="paragraph" dangerouslySetInnerHTML={{ __html: d }} />
                                         ))}
                                     </li>
                                 ))}

@@ -19,7 +19,7 @@
 
     &-icon {
         height: 2vh;
-        transition: transform 0.3s ease;
+        transition: $transition;
 
         &.open {
             transform: rotate(90deg);
