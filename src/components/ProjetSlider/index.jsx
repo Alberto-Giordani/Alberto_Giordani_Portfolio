@@ -1,9 +1,17 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import ProjetSlide from "../ProjetSlide";
 import "./ProjetSlider.scss";
 
 function ProjetSlider({ projet, onNext, onPrev }) {
     const startX = useRef(null);
+
+    const [animationClass, setAnimationClass] = useState("");
+
+    useEffect(() => {
+        setAnimationClass("fade-in");
+        const timer = setTimeout(() => setAnimationClass(""), 500);
+        return () => clearTimeout(timer);
+    }, [projet]);
 
     const handleKey = (e) => {
         if (e.key === "ArrowRight") onNext?.();
@@ -28,7 +36,11 @@ function ProjetSlider({ projet, onNext, onPrev }) {
             onTouchStart={onTouchStart}
             onTouchEnd={onTouchEnd}
         >
-            <ProjetSlide projet={projet} />
+            <ProjetSlide
+                key={projet.title}
+                projet={projet}
+                className={animationClass}
+            />
         </div>
     );
 }

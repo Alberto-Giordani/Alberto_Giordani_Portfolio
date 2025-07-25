@@ -1,10 +1,10 @@
 import "./ProjetSlide.scss";
 
-function ProjetSlide({ projet }) {
+function ProjetSlide({ projet, className = "" }) {
 
     // Mapping du tableau projets.json pour générer dynamiquement du contenu
     return (
-        <article className="slide">
+        <article className={`slide ${className}`.trim()}>
             <div className="slide__left">
                 <h1>{projet.title}</h1>
                 <div className="slide__left--images">

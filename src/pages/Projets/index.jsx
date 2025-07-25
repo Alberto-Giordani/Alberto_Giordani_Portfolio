@@ -48,7 +48,11 @@ function Projets() {
                             className="projets__spiral--image"
                         />
                         <div className="projets__spiral--content">
-                            <ProjetSlider projet={projets[index]} />
+                            <ProjetSlider
+                                projet={projets[index]}
+                                onNext={next}
+                                onPrev={prev}
+                            />
                         </div>
                     </div>
                 </div>
