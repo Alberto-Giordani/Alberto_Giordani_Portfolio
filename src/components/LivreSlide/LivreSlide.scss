@@ -1,0 +1,118 @@
+@use "../../styles/variables" as *;
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeInSlide 1s ease-in-out forwards;
+}
+
+.slide {
+    &__left {
+        &--cover {
+            position: absolute;
+            top: 5%;
+            left: 18.4%;
+            width: 25%;
+            height: auto;
+            box-shadow: $shadow5px;
+            border-radius: 2%;
+            transition: $transition;
+
+            &:hover {
+                transform: rotate(2deg) translateY(15%);
+                filter: drop-shadow($shadow5px);
+                scale: 1.5;
+                z-index: 6;
+                border-radius: 0;
+            }
+
+            @media screen and (max-width: 960px) {
+                width: 50%;
+            }
+        }
+
+        &--description {
+            position: absolute;
+            top: 70%;
+            left: 18.4%;
+            width: 25%;
+            font-family: $fontbody;
+            font-size: $sizebody;
+            color: $blackcolor;
+            text-align: left;
+
+            @media screen and (max-width: 960px) {
+                font-size: 4vw;
+                top: 55%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 77%;
+            }
+        }
+
+    }
+
+    &__right {
+        &--title {
+            position: absolute;
+            top: 9%;
+            left: 62.2%;
+            font-family: $fonttitle;
+            font-size: $sizeh2;
+            font-style: italic;
+            color: $bluecolor;
+            text-shadow: $shadow2px;
+
+            @media screen and (max-width: 960px) {
+                font-size: 5vw;
+                top: 5%;
+                left: 50%;
+                transform: translateX(-50%);
+                text-shadow: none;
+            }
+        }
+
+
+        &--links {
+            position: absolute;
+            bottom: 5%;
+            right: 2.5%;
+            font-family: $fontbody;
+            font-size: $sizebody;
+            width: 33%;
+
+            @media screen and (max-width: 960px) {
+                font-size: 4vw;
+                bottom: 5%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 77%;
+            }
+
+            a {
+                display: inline-block;
+                margin: 0.34vw 0.34vw 0.34vw 0;
+                padding: 0.34vw 0.68vw;
+                text-decoration: none;
+                color: $bluecolor;
+                border: 2px solid $bluecolor;
+                border-radius: 10px;
+                transition: $transition;
+
+                &:hover {
+                    background-color: $bluecolor;
+                    color: $whitecolor;
+                    filter: drop-shadow($shadow5px);
+                }
+            }
+        }
+    }
+}

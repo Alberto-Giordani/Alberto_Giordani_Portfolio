@@ -1,9 +1,62 @@
 @use "../../styles/variables" as *;
 
+
 .auteur {
+    position: relative;
     background-color: $whitecolor;
     font-family: $fontbody;
-    min-height: 90vh;
+    height: 90vh;
+
+    @media screen and (max-width: 960px) {
+        height: 100vh;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 10vh;
+        background: none;
+        border: none;
+        cursor: pointer;
+        filter: drop-shadow($shadow2px);
+        transition: filter 0.3s ease-out;
+        z-index: 5;
+
+        @media screen and (max-width: 960px) {
+            height: 5vh;
+            top: 5%;
+            filter: none;
+        }
+
+        &:hover {
+            filter: drop-shadow($shadow5px);
+
+            @media screen and (max-width: 960px) {
+                filter: none;
+            }
+        }
+
+        &--left {
+            left: 2vw;
+
+            @media screen and (max-width: 960px) {
+                left: $main-margin;
+            }
+        }
+
+        &--right {
+            right: 2vw;
+
+            @media screen and (max-width: 960px) {
+                right: $main-margin;
+            }
+        }
+
+        img {
+            height: 100%;
+        }
+    }
 
     &__content {
         @include content;
@@ -11,8 +64,6 @@
 
     &__container {
         @include container;
-        flex-direction: column;
-        gap: 2rem;
     }
 
     &__spiral {
@@ -26,10 +77,26 @@
                 @include spiral__transformation;
             }
         }
+
+        &--content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
     }
 
-    &__text {
-        text-align: left;
+    &__title {
+        position: absolute;
+        top: 14.5%;
+        right: 3.5%;
+        z-index: 3;
 
         h1 {
             font-family: $fonttitle;
@@ -37,68 +104,43 @@
             font-size: $sizeh1;
             font-style: italic;
             text-shadow: $shadow2px;
-            margin-bottom: 1rem;
+
+            @media screen and (max-width: 960px) {
+                font-size: 8vw;
+                top: 18%;
+                right: 12%;
+                text-shadow: none;
+            }
         }
+    }
+
+    &__bio {
+        position: absolute;
+        bottom: 18%;
+        right: 2.5%;
+        width: 33%;
+        height: 40%;
+        overflow: auto;
+        z-index: 3;
 
         p {
             font-family: $fontbody;
             font-size: $sizebody;
             color: $blackcolor;
             line-height: 1.6;
-            margin-bottom: 1rem;
 
             @media screen and (max-width: 960px) {
                 font-size: 4vw;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 77%;
+                position: relative;
+                bottom: auto;
+                right: auto;
             }
 
             span {
                 font-weight: 600;
-            }
-        }
-    }
-
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1rem;
-        width: 100%;
-    }
-
-    &__book {
-        background-color: $azurecolor;
-        padding: 1rem;
-        border-radius: 4px;
-        text-align: center;
-
-        img {
-            width: 100%;
-            height: auto;
-            max-width: 200px;
-            margin-inline: auto;
-            display: block;
-            box-shadow: $shadow5px;
-        }
-
-        h2 {
-            font-family: $fonttitle;
-            font-style: italic;
-            color: $bluecolor;
-            font-size: $sizeh2;
-        }
-
-        p {
-            font-size: $sizebody;
-            color: $blackcolor;
-        }
-
-        a {
-            color: $bluecolor;
-            text-decoration: none;
-            margin: 0 0.5rem;
-            transition: $transition;
-
-            &:hover {
-                color: $goldcolor;
             }
         }
     }

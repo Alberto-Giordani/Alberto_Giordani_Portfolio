@@ -58,5 +58,24 @@
             "en": "https://a.co/d/fnZSeM2"
         },
         "ibs": "https://www.ibs.it/passaggi-libro-alberto-giordani/e/9788857531762?queryId=c8e45befee7027da842618af40672df5"
+    },
+    {
+        "id": "traitsdunion",
+        "cover": "/assets/books/traitsdunion.webp",
+        "title": {
+            "fr": "Traits\nd’union",
+            "it": "Traits\nd’union",
+            "en": "Traits\nd’union"
+        },
+        "description": {
+            "fr": "Des fragments brefs comme des souffles, reliés par un fil invisible : l’absurde, le tendre et le tragique se frôlent à chaque page comme en un instant de vérité.",
+            "it": "Frammenti brevi come respiri, uniti da un filo invisibile: l’assurdo, il tenero e il tragico si sfiorano in ogni pagina come in un istante di verità.",
+            "en": "Brief fragments like breaths, tied by an invisible thread: absurd, tender and tragic brush against each other on every page, like moments of truth."
+        },
+        "amazon": {
+            "fr": "https://amzn.eu/d/jkIZD0w",
+            "it": "https://amzn.eu/d/6gjhcXk",
+            "en": "https://a.co/d/1U9xq6j"
+        }
     }
 ]
