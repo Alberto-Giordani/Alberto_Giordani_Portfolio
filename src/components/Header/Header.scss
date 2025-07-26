@@ -59,12 +59,12 @@
             text-decoration: none;
             font-family: $fontbody;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 1rem;
             transition: all 0.3s ease-out;
             text-wrap: nowrap;
 
             @media screen and (max-width: 1280px) {
-                font-size: 14px;
+                font-size: 0.875rem;
             }
 
             &:hover {

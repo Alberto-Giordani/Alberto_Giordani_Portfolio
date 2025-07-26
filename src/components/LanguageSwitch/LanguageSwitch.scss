@@ -3,10 +3,15 @@
 .lang-switch {
     font-family: $fontbody;
     font-weight: 500;
+    font-size: 1rem;
     border-color: $bluecolor;
 
     &:focus {
         outline: none;
         border-color: $goldcolor;
+    }
+
+    @media screen and (max-width: 1280px) {
+        font-size: 0.875rem;
     }
 }
