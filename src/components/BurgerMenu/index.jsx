@@ -14,7 +14,12 @@ function BurgerMenu() {
 
     return (
         <>
-            <button className="burger-button" onClick={toggleMenu} aria-label="Menu">
+            <button
+                className="burger-button"
+                onClick={toggleMenu}
+                aria-label="Menu"
+                aria-expanded={isOpen}
+            >
                 <img
                     src={isOpen ? closeIcon : menuIcon}
                     alt={isOpen ? t('burger.close') : t('burger.open')}
@@ -22,7 +27,12 @@ function BurgerMenu() {
                 />
             </button>
 
-            <nav className={`burger-panel ${isOpen ? "open" : ""}`} onClick={closeMenu}>
+            <nav
+                className={`burger-panel ${isOpen ? "open" : ""}`}
+                onClick={closeMenu}
+                aria-hidden={!isOpen}
+                style={{ display: isOpen ? "block" : "none" }}
+            >
                 <ul className="burger-links">
                     {["/", "/apropos", "/projets", "/cv", "/auteur", "/contact"].map((path, i) => (
                         <li key={path}>

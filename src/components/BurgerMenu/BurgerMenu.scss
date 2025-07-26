@@ -10,11 +10,6 @@
         position: relative;
         padding-right: $main-margin;
         z-index: 2000;
-        display: none;
-
-        @media screen and (max-width: 960px) {
-            display: block;
-        }
     }
 
     &-icon {
