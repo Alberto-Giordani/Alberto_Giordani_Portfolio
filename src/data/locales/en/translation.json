@@ -6,7 +6,8 @@
         "cv": "Resume",
         "contact": "Contact",
         "homeMobile": "Home",
-        "aproposMobile": "About"
+        "aproposMobile": "About",
+        "auteur": "Author"
     },
     "burger": {
         "open": "Open menu",
@@ -117,5 +118,10 @@
         },
         "submit": "Send",
         "error": "Error {{message}} when sending. Please try again"
+    },
+    "auteur": {
+        "title": "Author",
+        "bio": "<bold>Alberto Giordani</bold> is an author and front-end developer.<br/>He writes across thresholds: between words and silence, body and memory, code and imagination.<br/>He has published poetry, plays, essays, and fiction. Today, he brings his literary sensibility into building accessible, elegant, and high-performing websites.<br/>Because every page — in a book or online — is a space to inhabit.",
+        "booksTitle": "Published books"
     }
 }

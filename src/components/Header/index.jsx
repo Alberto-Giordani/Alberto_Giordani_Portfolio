@@ -38,7 +38,7 @@ function Header() {
                         </>
                     ) : (
                         <nav className="header__links">
-                            {["/", "/apropos", "/projets", "/cv", "/contact"].map((path, i) => (
+                            {["/", "/apropos", "/projets", "/cv", "/auteur", "/contact"].map((path, i) => (
                                 <NavLink
                                     key={path}
                                     to={path}
@@ -51,6 +51,7 @@ function Header() {
                                         t('nav.apropos'),
                                         t('nav.projets'),
                                         t('nav.cv'),
+                                        t('nav.auteur'),
                                         t('nav.contact')
                                     ][i]}
                                 </NavLink>

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "b71a3",
+        "cover": "/assets/books/b71a3.webp",
+        "title": {
+            "fr": "B71A3",
+            "it": "B71A3",
+            "en": "B71A3"
+        },
+        "description": {
+            "fr": "Entre les ruines de la mémoire et les ombres de l’oubli, un homme cherche les traces de vies effacées. Mais qui a vraiment vécu cette histoire ?",
+            "it": "Tra le macerie della memoria e le ombre dell’ignoto, un uomo cerca le tracce di vite dimenticate. Ma chi ha davvero vissuto quella storia?",
+            "en": "Among the ruins of memory and the shadows of the unknown, a man searches for the traces of forgotten lives. But who truly lived that story?"
+        },
+        "amazon": {
+            "fr": "https://amzn.eu/d/goPrk2l",
+            "it": "https://amzn.eu/d/4asAXnr",
+            "en": "https://a.co/d/ffTyOEL"
+        },
+        "ibs": "https://www.ibs.it/b71a3-storie-di-palazzo-parigino-libro-alberto-giordani/e/9791256380404"
+    },
+    {
+        "id": "soglie",
+        "cover": "/assets/books/soglie.webp",
+        "title": {
+            "fr": "Soglie",
+            "it": "Soglie",
+            "en": "Soglie"
+        },
+        "description": {
+            "fr": "Un voyage poétique à travers les seuils de la conscience : là où chaque mot retient un silence, chaque attente devient décision.",
+            "it": "Un viaggio poetico attraverso le soglie della coscienza: là dove ogni parola trattiene un silenzio, ogni attesa si fa decisione.",
+            "en": "A poetic journey through the thresholds of consciousness: where every word holds a silence, and every waiting becomes a choice."
+        },
+        "amazon": {
+            "fr": "https://amzn.eu/d/e6JrJeb",
+            "it": "https://amzn.eu/d/1CcMIEM",
+            "en": "https://a.co/d/4TJdrEa"
+        },
+        "ibs": "https://www.ibs.it/soglie-libro-alberto-giordani/e/9788893870504?queryId=c8e45befee7027da842618af40672df5"
+    },
+    {
+        "id": "passaggi",
+        "cover": "/assets/books/passaggi.webp",
+        "title": {
+            "fr": "Passaggi",
+            "it": "Passaggi",
+            "en": "Passaggi"
+        },
+        "description": {
+            "fr": "Un livre de passages, entre épiphanies du quotidien et seuils de l’âme : chaque page traverse un éclat d’humanité.",
+            "it": "Un libro di passaggi, tra epifanie quotidiane e soglie dell’anima: ogni pagina è un attraversamento che ci svela un frammento di umanità.",
+            "en": "A book of passages, between daily epiphanies and soul’s thresholds: each page is a crossing into a fragment of humanity."
+        },
+        "amazon": {
+            "fr": "https://amzn.eu/d/9zlbRWf",
+            "it": "https://amzn.eu/d/eFIE0x8",
+            "en": "https://a.co/d/fnZSeM2"
+        },
+        "ibs": "https://www.ibs.it/passaggi-libro-alberto-giordani/e/9788857531762?queryId=c8e45befee7027da842618af40672df5"
+    }
+]

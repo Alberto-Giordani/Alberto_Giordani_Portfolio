@@ -1,0 +1,105 @@
+@use "../../styles/variables" as *;
+
+.auteur {
+    background-color: $whitecolor;
+    font-family: $fontbody;
+    min-height: 90vh;
+
+    &__content {
+        @include content;
+    }
+
+    &__container {
+        @include container;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    &__spiral {
+        @include spiral_shape;
+
+        &--image {
+            width: auto;
+            height: 100%;
+
+            @media screen and (max-width: 960px) {
+                @include spiral__transformation;
+            }
+        }
+    }
+
+    &__text {
+        text-align: left;
+
+        h1 {
+            font-family: $fonttitle;
+            color: $bluecolor;
+            font-size: $sizeh1;
+            font-style: italic;
+            text-shadow: $shadow2px;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-family: $fontbody;
+            font-size: $sizebody;
+            color: $blackcolor;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+
+            @media screen and (max-width: 960px) {
+                font-size: 4vw;
+            }
+
+            span {
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        width: 100%;
+    }
+
+    &__book {
+        background-color: $azurecolor;
+        padding: 1rem;
+        border-radius: 4px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            margin-inline: auto;
+            display: block;
+            box-shadow: $shadow5px;
+        }
+
+        h2 {
+            font-family: $fonttitle;
+            font-style: italic;
+            color: $bluecolor;
+            font-size: $sizeh2;
+        }
+
+        p {
+            font-size: $sizebody;
+            color: $blackcolor;
+        }
+
+        a {
+            color: $bluecolor;
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: $transition;
+
+            &:hover {
+                color: $goldcolor;
+            }
+        }
+    }
+}
