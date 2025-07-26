@@ -106,10 +106,7 @@
             text-shadow: $shadow2px;
 
             @media screen and (max-width: 960px) {
-                font-size: 8vw;
-                top: 18%;
-                right: 12%;
-                text-shadow: none;
+                display: none;
             }
         }
     }
@@ -141,6 +138,10 @@
 
             span {
                 font-weight: 600;
+            }
+
+            @media screen and (max-width: 960px) {
+                display: none;
             }
         }
     }
