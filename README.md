@@ -1,6 +1,6 @@
 # Portfolio – Alberto Giordani
 
-🎯 **Site en ligne** : [https://alberto-giordani.com](https://alberto-giordani.com)
+L’ancien domaine `alberto-giordani.com` est hors ligne.
 
 Bienvenue sur le code source de mon portfolio personnel, développé en **React** avec **Vite** et **Sass**.  
 Ce site a été conçu pour présenter mon profil de **développeur front-end junior**, avec une forte attention à l’**esthétique**, l’**accessibilité** et la **cohérence visuelle**.

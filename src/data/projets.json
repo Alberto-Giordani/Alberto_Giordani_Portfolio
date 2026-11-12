@@ -1,5 +1,41 @@
 [
     {
+        "id": "dolcevita-travel",
+        "title": {
+            "fr": "DolceVita Travel",
+            "it": "DolceVita Travel",
+            "en": "DolceVita Travel"
+        },
+        "description": {
+            "fr": [
+                "Projet web du Practicum Mayerfeld",
+                "Catalogue de six circuits avec React, Vite et Tailwind CSS",
+                "API Express, PostgreSQL et comptes utilisateurs",
+                "Stripe Checkout en mode test"
+            ],
+            "it": [
+                "Progetto web del Practicum Mayerfeld",
+                "Catalogo di sei itinerari con React, Vite e Tailwind CSS",
+                "API Express, PostgreSQL e account utente",
+                "Stripe Checkout in modalità di test"
+            ],
+            "en": [
+                "Web project for the Mayerfeld Practicum",
+                "Six-tour catalogue built with React, Vite and Tailwind CSS",
+                "Express API, PostgreSQL and user accounts",
+                "Stripe Checkout in test mode"
+            ]
+        },
+        "logo": "/assets/logos/logoDolceVita.webp",
+        "images": [
+            "/assets/screen/DolceVita_1.webp",
+            "/assets/screen/DolceVita_2.webp",
+            "/assets/screen/DolceVita_3.webp"
+        ],
+        "github": "https://github.com/Alberto-Giordani/DolceVita-Travel/tree/week-4-stripe",
+        "site": "https://dolcevita-travel.vercel.app/"
+    },
+    {
         "id": "argentbank",
         "title": {
             "fr": "ArgentBank",
